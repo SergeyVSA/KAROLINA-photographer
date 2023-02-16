@@ -114,16 +114,15 @@ header {
   line-height: 42px;
   text-align: center;
   color: $color-main;
-  
+
   span {
     font-size: $font-size-24;
   }
   .about_me_headline .heading {
     display: inline-block;
     vertical-align: middle;
-    
   }
- /* :before,
+  /* :before,
   :after {
     content: "";
     display: inline-block;
@@ -161,11 +160,11 @@ header {
     position: relative;
     margin-right: 144px;
     span {
-        border-left: 1px solid black;
-        height: 175px;
-        position: absolute;
-        top: 48px;
-        right: 503px;
+      border-left: 1px solid black;
+      height: 175px;
+      position: absolute;
+      top: 48px;
+      right: 503px;
     }
   }
   .button_about_me {
@@ -189,24 +188,21 @@ header {
     padding-right: 60px;
     position: relative;
     bottom: 53px;
-   
   }
 }
-.carousel_headline{
+.carousel_headline {
   height: 114px;
   font-family: $font-raleway;
-  font-weight:  $fw3;
+  font-weight: $fw3;
   font-size: $font-size-36;
   line-height: 42px;
   text-align: start;
   padding: 30px 0px 0px 190px;
-  span{
+  span {
     padding: 0px 0px 0px 180px;
-
   }
-
-  }
-    .counter{
+}
+.counter {
   display: flex;
   flex-direction: row;
   justify-content: end;
@@ -216,53 +212,50 @@ header {
   line-height: 41px;
   font-size: 30px;
 }
-.carousel{
+.carousel {
   display: flex;
   .owl-dots {
-  display: none;
-}
+    display: none;
+  }
 
-img{
-  width: 100%;
-}
+  img {
+    width: 100%;
+  }
 
-.owl-prev{
- /* background-color: #bcc0c1 !important;*/
+  .owl-prev {
+    /* background-color: #bcc0c1 !important;*/
     position: absolute;
-    left:50px;
+    left: 50px;
     top: 50%;
     height: 40px;
     width: 40px;
     transform: translateY(-50%);
     margin: 0 !important;
-}
-.owl-next{
-
-/*  background-color: white !important;*/
+  }
+  .owl-next {
+    /*  background-color: white !important;*/
     position: absolute;
-    right:50px;
+    right: 50px;
     top: 50%;
     height: 40px;
     width: 40px;
     transform: translateY(-50%);
     margin: 0 !important;
+  }
 }
-
-
-}
-.main_gallery_headline{
+.main_gallery_headline {
   text-align: center;
   font-family: $font-raleway;
   font-weight: $fw4;
   font-size: $font-size-36;
   line-height: 10px;
   margin-top: 70px;
-  span{
+  span {
     font-size: $font-size-24;
     line-height: 18px;
   }
 }
-.main_gallery{
+.main_gallery {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -272,57 +265,71 @@ img{
   font-size: $font-size-24;
   font-weight: $fw4;
   font-family: $font-raleway;
-  
-  a{
+
+  a {
     color: $color-main;
-   padding: 5px;
-   line-height: 28px;
+    padding: 5px;
+    line-height: 28px;
   }
-  
 }
-.button_more{
+.button_more {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  
+
   font-size: $font-size-24;
   font-family: $font-raleway;
   font-weight: $fw5;
   line-height: 28px;
   margin-top: 50px;
-  a{
+  a {
     color: $color-button-more;
   }
 }
-.instagram_gallery{
+.instagram_gallery {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-top: 120px;
-  background-image: url("img/background.jpg");
 }
-.headline_form{
-     font-weight: $fw4;
-    font-size: $font-size-26;
-    font-family: $font-raleway;
-    line-height: 31px;
-    text-align: center;
-    margin-top: 150px;
+.headline_form {
+  font-weight: $fw4;
+  font-size: $font-size-26;
+  font-family: $font-raleway;
+  line-height: 31px;
+  text-align: center;
+  margin-top: 150px;
 }
-.application_form{
+.application_form {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   margin-top: 70px;
   margin-bottom: 100px;
-  
-  input{
-   width: 273px; 
-   padding: 10px;
-   background-color: rgba(229, 223, 219, 0.9);
-   font-family: $font-roboto;
-   font-weight: $fw3;
-   font-size: $font-size-18;
-   color: $color-main;
+
+  input {
+    width: 273px;
+    padding: 10px;
+    background-color: rgba(229, 223, 219, 0.9);
+    font-family: $font-roboto;
+    font-weight: $fw3;
+    font-size: $font-size-18;
+    color: $color-main;
   }
- }
+}
+.button_application_form {
+  display: flex;
+  justify-content: center;
+  a {
+    background-color: $background-button;
+    color: $color-button;
+    border-radius: 5px;
+    font-family: $font-roboto;
+    font-weight: $fw5;
+    font-size: $font-size-18;
+    line-height: 21px;
+    padding: 18px 72px 18px 72px;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+}
