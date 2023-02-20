@@ -4,6 +4,7 @@ $(function () {
         margin: 10,
         autoWidth:true,
         nav: true,
-        dots: false
+        dots: false,
+        Object: true
     })
 });
