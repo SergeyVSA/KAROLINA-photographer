@@ -353,4 +353,51 @@ footer .footer_icon {
   align-items: center;
 }
 
+.hidden {
+  display: none !important;
+}
+
+.mobile_header .mobile_menu_btn {
+  display: flex;
+  position: absolute;
+  right: 20px;
+  padding: 20px;
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width: 1000px) {
+  header {
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .nav_menu {
+    display: none;
+  }
+  header {
+    padding: 20px;
+    height: 61px;
+  }
+  header .logo {
+    text-align: start;
+    font-size: 18px;
+    font-weight: "Roboto", sans-serif;
+    font-weight: 300;
+    line-height: 21px;
+  }
+  header span {
+    font-size: 13px;
+    font-weight: "Roboto", sans-serif;
+    font-weight: 400;
+  }
+  .nav_icon {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .mobile_menu_btn {
+    display: none !important;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
