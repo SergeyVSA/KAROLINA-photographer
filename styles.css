@@ -99,14 +99,14 @@ header .nav_icon img {
 .about_me_headline :after {
   content: "";
   position: absolute;
-  width: 13%;
+  width: 200px;
   border-top: 1px solid #000000;
 }
 .about_me_headline :before {
-  margin-left: -28%;
+  margin-left: -387px;
 }
 .about_me_headline :after {
-  margin-left: 14%;
+  margin-left: 212px;
 }
 
 main {
@@ -115,7 +115,7 @@ main {
 }
 main .about_me {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   background-color: #e5dfdb;
   align-items: center;
   position: relative;
@@ -128,7 +128,7 @@ main .about_me .about_me_discription {
   font-size: 18px;
   line-height: 21px;
   position: relative;
-  margin-right: 144px;
+  /*  margin-right: 144px;*/
   width: 33%;
 }
 main .about_me .about_me_discription span {
@@ -154,8 +154,8 @@ main .about_me .button_about_me a {
   text-align: center;
 }
 main .about_me .about_me_picture {
-  padding-left: 183px;
-  padding-right: 60px;
+  /*padding-left: 8px;*/
+  padding-right: 50px;
   position: relative;
   bottom: 53px;
   height: auto;
@@ -176,16 +176,13 @@ main .about_me img {
 .carousel_headline span {
   padding: 0px 0px 0px 180px;
 }
-.carousel_headline :after {
-  content: "";
-  position: absolute;
-  width: 31%;
-  border-top: 1px solid #000000;
-}
-.carousel_headline :after {
-  margin-left: 9%;
-}
 
+/*.carousel_headline::before {
+    content: "";
+    position: absolute;
+    width: 41%;
+    border: 1px solid $color-main;
+  }*/
 .counter {
   display: flex;
   flex-direction: row;
@@ -202,13 +199,15 @@ main .about_me img {
   margin: 0 auto;
   display: flex;
 }
-.carousel .owl-dots {
+
+.owl-dots {
   display: none;
 }
-.carousel img {
-  width: 100%;
-}
-.carousel .owl-prev {
+
+/*img {
+    width: 100%;
+  }*/
+.owl-prev {
   /* background-color: #bcc0c1 !important;*/
   position: absolute;
   left: 50px;
@@ -218,7 +217,8 @@ main .about_me img {
   transform: translateY(-50%);
   margin: 0 !important;
 }
-.carousel .owl-next {
+
+.owl-next {
   /*  background-color: white !important;*/
   position: absolute;
   right: 50px;
@@ -228,14 +228,16 @@ main .about_me img {
   transform: translateY(-50%);
   margin: 0 !important;
 }
-.carousel .owl-next,
-.carousel .owl-prev {
+
+.owl-next,
+.owl-prev {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.carousel .owl-next span,
-.carousel .owl-prev span {
+
+.owl-next span,
+.owl-prev span {
   margin-top: -10px;
   display: block;
 }
@@ -256,7 +258,7 @@ main .about_me img {
   font-size: 24px;
   line-height: 18px;
 }
-.main_gallery_headline ::after {
+.main_gallery_headline .main_gallery_headline::after {
   position: absolute;
   top: -28px;
   width: 440px;
@@ -382,6 +384,8 @@ footer .nav_footer {
   padding: 23px 110px;
   gap: 110px;
   flex-wrap: wrap;
+  flex-wrap: nowrap;
+  white-space: nowrap;
 }
 footer .logo {
   font-size: 28px;
@@ -397,6 +401,7 @@ footer span {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   text-align: center;
+  padding: 0px;
 }
 footer a {
   font-size: 18px;
@@ -438,6 +443,7 @@ footer .footer_icon {
   position: absolute;
   right: 0px;
   top: 61px;
+  z-index: 1;
 }
 .mobile_menu .dropdown {
   position: relative;
@@ -514,6 +520,7 @@ footer .footer_icon {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 26px;
 }
 .mobile_gallery p {
   font-family: "Raleway", sans-serif;
@@ -568,6 +575,7 @@ footer .footer_icon {
   letter-spacing: 0.07em;
   margin-top: 50px;
   margin-bottom: 20px;
+  white-space: nowrap;
 }
 .mobile_feedback p {
   font-size: 16px;
@@ -580,66 +588,134 @@ footer .footer_icon {
   font-weight: bold;
   text-align: start;
 }
-@media only screen and (max-width: 1200px) {
-  .mobile_feedback .footer_icon {
-    display: flex;
-    margin: 0 auto;
-  }
-  .mobile_feedback .footer_icon a {
-    align-items: center;
-  }
+
+.main_mobile_gallery img {
+  padding-bottom: 10px;
+  padding-top: 20px;
 }
-@media only screen and (min-width: 850) and (max-width: 1366px) {
-  .mobile_feedback footer .logo {
-    margin: 0 auto;
-    border: none;
-  }
-  .mobile_feedback .footer_icon {
-    display: flex;
-    margin: 0 auto;
-  }
-  .mobile_feedback .footer_icon a {
-    align-items: center;
-  }
-  .mobile_feedback .nav_footer {
-    margin: 0 auto;
-    white-space: nowrap;
-    flex-wrap: nowrap;
-  }
+.main_mobile_gallery .main_mobile_button {
+  position: absolute;
+  padding-left: 25px;
+  transform: translateY(176%);
 }
-@media only screen and (max-width: 1366px) {
-  .mobile_feedback .about_me_picture {
-    margin: auto;
-  }
-  .mobile_feedback .about_me_discription {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-  .mobile_feedback .about_me_discription span {
-    /* display: none;*/
-  }
-  .mobile_feedback .footer_icon {
-    display: flex;
-    margin: 0 auto;
-  }
-  .mobile_feedback .footer_icon a {
-    align-items: center;
-  }
+.main_mobile_gallery span::before {
+  content: "";
+  border: 1px solid black;
+  width: 130px;
+  margin-top: 20px;
+  position: absolute;
 }
 
-@media only screen and (max-width: 850px) {
-  .application_form {
-    gap: 30px;
-    flex-wrap: wrap;
+.mobile_footer {
+  margin: o auto;
+  background: #e5dfdb;
+  padding: 40px 0px 50px 0px;
+  text-align: center;
+}
+.mobile_footer .logo {
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  line-height: 25px;
+  text-align: center;
+  /* padding: 0px 91px;*/
+}
+.mobile_footer span {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  padding: 0px;
+}
+.mobile_footer a {
+  text-decoration: underline;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: -0.015em;
+  line-height: 21px;
+  color: #000000;
+}
+.mobile_footer .mobile_footer_icon {
+  text-align: center;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.mobile_about_me_headline {
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.065em;
+  text-transform: uppercase;
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+.mobile_about_me_headline span {
+  font-size: 13px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  line-height: 15px;
+}
+
+.headline_line::before {
+  content: "";
+  position: absolute;
+  border-top: 1px solid #000000;
+  width: 43px;
+  margin-top: 11px;
+  margin-left: -61px;
+}
+
+.headline_line::after {
+  content: "";
+  position: absolute;
+  border-top: 1px solid #000000;
+  width: 43px;
+  margin-top: 11px;
+  margin-left: 11px;
+}
+
+@media only screen and (max-width: 700px) {
+  .main_gallery {
+    display: none;
   }
 }
-@media only screen and (max-width: 1000px) {
-  header {
-    padding: 20px;
+@media only screen and (min-width: 700px) {
+  .main_mobile_gallery {
+    display: none;
   }
 }
 @media only screen and (max-width: 800px) {
+  footer {
+    display: none;
+  }
+  .main_gallery_headline {
+    font-size: 18px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #000000;
+  }
+  .main_gallery_headline ::before {
+    content: "";
+    position: absolute;
+    border-top: 1px solid #000000;
+    width: 130px;
+    left: 0px;
+    bottom: 58px;
+  }
+  .main_gallery_headline span {
+    display: none;
+  }
   .nav_menu {
     display: none;
   }
@@ -681,15 +757,23 @@ footer .footer_icon {
     border: none;
     line-height: 20px;
   }
+  footer span {
+    text-align: center;
+  }
   .instagram_gallery {
     display: none;
   }
   .about_me_discription {
     display: none;
   }
-  .about_me_picture img {
+  main .about_me_picture {
+    top: 1px;
+    padding-left: 50px;
+  }
+  main img {
     margin: 0 auto;
     width: 100%;
+    position: relative;
   }
   .owl-item {
     width: 290px;
@@ -728,15 +812,57 @@ footer .footer_icon {
   }
   .carousel_headline {
     margin: 0 auto;
-    padding: 12px;
+    position: relative;
+    padding-left: 40px;
+    font-family: "Raleway", sans-serif;
+    line-height: 26px;
+    font-size: 18px;
+    text-align: start;
+    text-transform: uppercase;
+  }
+  .carousel_headline span {
+    padding-left: 88px;
+  }
+  /* .carousel_headline
+     ::before {
+       content: "";
+       position: absolute;
+       width: 120%;
+       border-top: 1px solid #000000;
+     }
+   */
+  .counter {
+    font-size: 12px;
+  }
+  .about_me_headline {
     font-family: "Raleway";
     font-style: normal;
+    font-weight: 400;
     font-size: 18px;
+    line-height: 21px;
     text-align: center;
+    letter-spacing: 0.065em;
     text-transform: uppercase;
+    color: #000000;
+  }
+  .about_me_headline span {
+    font-size: 13px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+  }
+  .about_me_headline {
+    display: none;
   }
 }
 @media only screen and (min-width: 800px) {
+  .mobile_about_me_headline {
+    display: none;
+  }
+  .mobile_footer {
+    display: none;
+  }
   .mobile_menu_btn {
     display: none !important;
   }
@@ -748,6 +874,77 @@ footer .footer_icon {
   }
   .mobile_feedback {
     display: none;
+  }
+}
+@media only screen and (max-width: 1370px) {
+  /* footer {
+      .logo {
+        margin: 0 auto;
+        border: none;
+      }
+    }*/
+  .footer_icon {
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+  }
+  .footer_icon a {
+    align-items: center;
+  }
+  /*  .nav_footer {
+      margin: 0 auto;
+      white-space: nowrap;
+      flex-wrap: nowrap;
+    }*/
+  .about_me_discription {
+    width: 100%;
+  }
+}
+/*@media only screen and (max-width: 1366px) {
+  .about_me_picture {
+    margin: auto;
+  }
+  .about_me_discription {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .footer_icon {
+    display: flex;
+    margin: 0 auto;
+    a {
+      align-items: center;
+    }
+  }
+}*/
+@media only screen and (max-width: 1210px) {
+  .footer_icon {
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    flex-wrap: nowrap;
+  }
+  .footer_icon a {
+    align-items: center;
+  }
+  footer .logo {
+    border: none;
+    margin: 0 auto;
+  }
+  footer .nav_footer {
+    display: flex;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .application_form {
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  header {
+    padding: 20px;
   }
 }
 

@@ -133,23 +133,24 @@ header {
   :after {
     content: "";
     position: absolute;
-    width: 13%;
+    width: 200px;
     border-top: 1px solid $color-main;
   }
   :before {
-    margin-left: -28%;
+    margin-left: -387px;
   }
   :after {
-    margin-left: 14%;
+    margin-left: 212px;
   }
 }
 
 main {
   max-width: 1440px;
   margin: 0 auto;
+ 
   .about_me {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     background-color: $background-secondary;
     align-items: center;
     position: relative;
@@ -162,7 +163,7 @@ main {
       font-size: $font-size-18;
       line-height: 21px;
       position: relative;
-      margin-right: 144px;
+    /*  margin-right: 144px;*/
       width: 33%;
       span {
         border-left: 1px solid black;
@@ -189,8 +190,8 @@ main {
     }
 
     .about_me_picture {
-      padding-left: 183px;
-      padding-right: 60px;
+      /*padding-left: 8px;*/
+      padding-right: 50px;
       position: relative;
       bottom: 53px;
       height: auto;
@@ -208,21 +209,17 @@ main {
   line-height: 42px;
   text-align: start;
   padding: 30px 0px 0px 190px;
+
   span {
     padding: 0px 0px 0px 180px;
   }
-
-  :after {
+}
+/*.carousel_headline::before {
     content: "";
     position: absolute;
-    width: 31%;
-    border-top: 1px solid $color-main;
-  }
-
-  :after {
-    margin-left: 9%;
-  }
-}
+    width: 41%;
+    border: 1px solid $color-main;
+  }*/
 .counter {
   display: flex;
   flex-direction: row;
@@ -238,46 +235,46 @@ main {
   max-width: 1440px;
   margin: 0 auto;
   display: flex;
-  .owl-dots {
-    display: none;
-  }
+}
+.owl-dots {
+  display: none;
+}
 
-  img {
+/*img {
     width: 100%;
-  }
+  }*/
 
-  .owl-prev {
-    /* background-color: #bcc0c1 !important;*/
-    position: absolute;
-    left: 50px;
-    top: 50%;
-    height: 40px;
-    width: 40px;
-    transform: translateY(-50%);
-    margin: 0 !important;
-  }
-  .owl-next {
-    /*  background-color: white !important;*/
-    position: absolute;
-    right: 50px;
-    top: 50%;
-    height: 40px;
-    width: 40px;
-    transform: translateY(-50%);
-    margin: 0 !important;
-  }
-  .owl-next,
-  .owl-prev {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.owl-prev {
+  /* background-color: #bcc0c1 !important;*/
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  transform: translateY(-50%);
+  margin: 0 !important;
+}
+.owl-next {
+  /*  background-color: white !important;*/
+  position: absolute;
+  right: 50px;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  transform: translateY(-50%);
+  margin: 0 !important;
+}
+.owl-next,
+.owl-prev {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .owl-next span,
-  .owl-prev span {
-    margin-top: -10px;
-    display: block;
-  }
+.owl-next span,
+.owl-prev span {
+  margin-top: -10px;
+  display: block;
 }
 
 .main_gallery_headline {
@@ -292,7 +289,7 @@ main {
     font-size: $font-size-24;
     line-height: 18px;
   }
-  ::after {
+  .main_gallery_headline::after {
     position: absolute;
     top: -28px;
 
@@ -422,6 +419,8 @@ footer {
     padding: 23px 110px;
     gap: 110px;
     flex-wrap: wrap;
+    flex-wrap: nowrap;
+    white-space: nowrap;
   }
   .logo {
     font-size: $font-size-28;
@@ -437,6 +436,7 @@ footer {
     font-family: $font-roboto;
     font-weight: $fw4;
     text-align: center;
+    padding: 0px;
   }
   a {
     font-size: $font-size-18;
@@ -478,6 +478,7 @@ footer {
   position: absolute;
   right: 0px;
   top: 61px;
+  z-index: 1;
 
   .dropdown {
     position: relative;
@@ -555,6 +556,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 26px;
   p {
     font-family: $font-raleway;
     font-size: $font-size-24;
@@ -572,6 +574,7 @@ footer {
   align-items: center;
   text-align: center;
   padding: 20px 40px 20px 40px;
+ 
   .button_about_me {
     margin-top: 15px;
     margin-left: 134px;
@@ -608,6 +611,7 @@ footer {
     letter-spacing: 0.07em;
     margin-top: 50px;
     margin-bottom: 20px;
+    white-space: nowrap;
   }
   p {
     font-size: 16px;
@@ -620,73 +624,139 @@ footer {
       text-align: start;
     }
   }
-
-  @media only screen and (max-width: 1200px) {
-    .footer_icon {
-      display: flex;
-      margin: 0 auto;
-      
-      a {
-        align-items: center;
-      }
-    }
+}
+.main_mobile_gallery {
+ 
+  img {
+    padding-bottom: 10px;
+    padding-top: 20px;
   }
-  
-  @media only screen and (min-width: 850 ) and (max-width: 1366px) {
-    footer {
-      .logo {
-        margin: 0 auto;
-        border: none;
-      }
-    }
-    .footer_icon {
-      display: flex;
-      margin: 0 auto;
-      a {
-        align-items: center;
-      }
-    }
-    .nav_footer {
-      margin: 0 auto;
-      white-space: nowrap;
-      flex-wrap: nowrap;
-    }
+  .main_mobile_button {
+    position: absolute;
+    padding-left: 25px;
+    transform: translateY(176%);
   }
-
-  @media only screen and (max-width: 1366px) {
-    .about_me_picture {
-      margin: auto;
-    }
-    .about_me_discription {
-      display: flex;
-      flex-wrap: wrap;
-      width: 100%;
-      span {
-        /* display: none;*/
-      }
-    }
-    .footer_icon {
-      display: flex;
-      margin: 0 auto;
-      a {
-        align-items: center;
-      }
-    }
+  span::before {
+    content: "";
+    border: 1px solid black;
+    width: 130px;
+    margin-top: 20px;
+    position: absolute;
   }
 }
+.mobile_footer {
+  margin: o auto;
+  background: $background-secondary;
+  padding: 40px 0px 50px 0px;
+  text-align: center;
 
-@media only screen and (max-width: 850px) {
-  .application_form {
-    gap: 30px;
-    flex-wrap: wrap;
+  .logo {
+    font-size: $font-size-24;
+    font-family: $font-roboto;
+    font-weight: $fw3;
+    line-height: 25px;
+    text-align: center;
+
+    /* padding: 0px 91px;*/
+  }
+  span {
+    font-size: $font-size-18;
+    font-family: $font-roboto;
+    font-weight: $fw3;
+    text-align: center;
+    padding: 0px;
+  }
+  a {
+    text-decoration: underline;
+    font-family: $font-roboto;
+    font-size: $font-size-18;
+    font-weight: $fw3;
+    text-align: center;
+    letter-spacing: -0.015em;
+    line-height: 21px;
+    color: $color-main;
+  }
+  .mobile_footer_icon {
+    text-align: center;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 30px;
   }
 }
-@media only screen and (max-width: 1000px) {
-  header {
-    padding: 20px;
+.mobile_about_me_headline {
+  font-size: $font-size-18;
+  font-family: $font-raleway;
+  font-weight: $fw4;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.065em;
+  text-transform: uppercase;
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 40px;
+
+  span {
+    font-size: 13px;
+    font-family: $font-raleway;
+    font-weight: $fw4;
+    line-height: 15px;
+  }
+}
+.headline_line::before{
+    content: "";
+    position: absolute;
+    border-top: 1px solid $color-main;
+    width: 43px;
+  margin-top: 11px;
+  margin-left: -61px;
+  }
+  .headline_line::after{
+    content: "";
+    position: absolute;
+    border-top: 1px solid $color-main;
+    width: 43px;
+    margin-top: 11px;
+    margin-left: 11px;
+  }
+
+@media only screen and (max-width: 700px) {
+  .main_gallery {
+    display: none;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .main_mobile_gallery {
+    display: none;
   }
 }
 @media only screen and (max-width: 800px) {
+  footer {
+    display: none;
+  }
+  .main_gallery_headline {
+    font-size: $font-size-18;
+    font-family: $font-raleway;
+    font-weight: $fw4;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #000000;
+ 
+    ::before {
+      content: "";
+      position: absolute;
+      border-top: 1px solid $color-main;
+      width: 130px;
+      left: 0px;
+      bottom: 58px;
+    }
+
+    span {
+      display: none;
+    }
+  }
+
   .nav_menu {
     display: none;
   }
@@ -727,6 +797,9 @@ footer {
       border: none;
       line-height: 20px;
     }
+    span {
+      text-align: center;
+    }
   }
   .instagram_gallery {
     display: none;
@@ -734,11 +807,18 @@ footer {
   .about_me_discription {
     display: none;
   }
-  .about_me_picture {
+  main {
+  
+    .about_me_picture {
+      top: 1px;
+      padding-left: 50px;
+    }
     img {
       margin: 0 auto;
       width: 100%;
+      position: relative;
     }
+    
   }
   .owl-item {
     width: 290px;
@@ -780,21 +860,65 @@ footer {
   }
   .carousel_headline {
     margin: 0 auto;
-    padding: 12px;
+    position: relative;
+    padding-left: 40px;
+    font-family: $font-raleway;
 
+    line-height: 26px;
+    font-size: $font-size-18;
+
+    text-align: start;
+    text-transform: uppercase;
+    
+    span{
+      padding-left: 88px;
+      
+    }
+  }
+ /* .carousel_headline
+    ::before {
+      content: "";
+      position: absolute;
+      width: 120%;
+      border-top: 1px solid #000000;
+    }
+  */
+  .counter {
+    font-size: 12px;
+  }
+
+  .about_me_headline {
     font-family: "Raleway";
     font-style: normal;
-
+    font-weight: 400;
     font-size: 18px;
-
+    line-height: 21px;
     text-align: center;
+    letter-spacing: 0.065em;
     text-transform: uppercase;
+
+    color: #000000;
+    span {
+      font-size: 13px;
+      font-family: $font-raleway;
+      font-weight: $fw4;
+      line-height: 21px;
+      text-align: center;
+    }
+  }
+  .about_me_headline {
+    display: none;
   }
 }
 
-@media only screen and (min-width: 700px) {
-}
 @media only screen and (min-width: 800px) {
+  .mobile_about_me_headline {
+    display: none;
+  }
+
+  .mobile_footer {
+    display: none;
+  }
   .mobile_menu_btn {
     display: none !important;
   }
@@ -806,5 +930,87 @@ footer {
   }
   .mobile_feedback {
     display: none;
+  }
+}
+@media only screen and (max-width: 1370px) {
+  /* footer {
+      .logo {
+        margin: 0 auto;
+        border: none;
+      }
+    }*/
+  .footer_icon {
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+    a {
+      align-items: center;
+    }
+  }
+/*  .nav_footer {
+    margin: 0 auto;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+  }*/
+  .about_me_discription{
+    width: 100%;
+  }
+}
+
+/*@media only screen and (max-width: 1366px) {
+  .about_me_picture {
+    margin: auto;
+  }
+  .about_me_discription {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .footer_icon {
+    display: flex;
+    margin: 0 auto;
+    a {
+      align-items: center;
+    }
+  }
+}*/
+
+@media only screen and (max-width: 1210px) {
+  .footer_icon {
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+flex-wrap: nowrap;
+    a {
+      align-items: center;
+    }
+   
+  }
+  footer{
+   
+ .logo{
+      border: none;
+      margin: 0 auto;
+    }
+   
+    
+    .nav_footer{
+      display: flex;
+      margin: 0 auto;
+    }
+}
+  }
+
+
+
+@media only screen and (max-width: 850px) {
+  .application_form {
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  header {
+    padding: 20px;
   }
 }

@@ -48,6 +48,9 @@ window.addEventListener("DOMContentLoaded", function () {
 
     });
     document.body.addEventListener("click", function (e) {
+        if(e.target.closest(".dropbtn")){
+            return;
+            }
         if (!e.target.closest(".mobile_menu_btn")) {
             document.querySelector(".mobile_menu").classList.add("hidden");
             
