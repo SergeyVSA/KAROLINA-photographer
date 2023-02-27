@@ -712,12 +712,12 @@ footer .footer_icon {
 .conteiner_gallery .portfolio_gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(392px, 1fr));
-  grid-row-gap: 54px;
-  grid-gap: 1vw;
   padding: 100px;
+  justify-content: center;
 }
 .conteiner_gallery .portfolio_gallery img {
   max-width: 100%;
+  height: auto;
 }
 .conteiner_gallery .portfolio_gallery a {
   text-align: center;

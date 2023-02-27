@@ -746,14 +746,14 @@ footer {
   .portfolio_gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(392px, 1fr));
-    grid-row-gap: 54px;
-    grid-gap: 1vw;
     padding: 100px;
+    justify-content: center;
 
     p {
     }
     img {
       max-width: 100%;
+      height: auto;
     }
     a {
       text-align: center;
