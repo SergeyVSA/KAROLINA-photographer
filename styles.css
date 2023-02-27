@@ -682,6 +682,69 @@ footer .footer_icon {
   margin-left: 11px;
 }
 
+.conteiner {
+  max-width: 1440px;
+  margin: 0 auto;
+  text-align: center;
+}
+.conteiner .portfolio_headline {
+  font-size: 36px;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.065em;
+  padding-top: 40px;
+}
+.conteiner .portfolio_headline span {
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 35px;
+  text-align: center;
+  padding: 0px 100px 70px 100px;
+}
+
+.conteiner_gallery {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.conteiner_gallery .portfolio_gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(392px, 1fr));
+  grid-row-gap: 54px;
+  grid-gap: 1vw;
+  padding: 100px;
+}
+.conteiner_gallery .portfolio_gallery img {
+  max-width: 100%;
+}
+.conteiner_gallery .portfolio_gallery a {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+  font-family: "Raleway", sans-serif;
+  line-height: 35px;
+  color: #000000;
+  text-align: center;
+}
+
+.gallery_pages {
+  text-align: center;
+  position: relative;
+  bottom: 83px;
+}
+.gallery_pages a {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 31px;
+  color: #000000;
+}
+.gallery_pages span {
+  position: relative;
+  bottom: 4px;
+}
+
 @media only screen and (max-width: 700px) {
   .main_gallery {
     display: none;
@@ -824,13 +887,13 @@ footer .footer_icon {
     padding-left: 88px;
   }
   /* .carousel_headline
-     ::before {
-       content: "";
-       position: absolute;
-       width: 120%;
-       border-top: 1px solid #000000;
-     }
-   */
+    ::before {
+      content: "";
+      position: absolute;
+      width: 120%;
+      border-top: 1px solid #000000;
+    }
+  */
   .counter {
     font-size: 12px;
   }
@@ -892,10 +955,10 @@ footer .footer_icon {
     align-items: center;
   }
   /*  .nav_footer {
-      margin: 0 auto;
-      white-space: nowrap;
-      flex-wrap: nowrap;
-    }*/
+    margin: 0 auto;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+  }*/
   .about_me_discription {
     width: 100%;
   }

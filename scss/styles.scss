@@ -147,7 +147,7 @@ header {
 main {
   max-width: 1440px;
   margin: 0 auto;
- 
+
   .about_me {
     display: flex;
     justify-content: center;
@@ -163,7 +163,7 @@ main {
       font-size: $font-size-18;
       line-height: 21px;
       position: relative;
-    /*  margin-right: 144px;*/
+      /*  margin-right: 144px;*/
       width: 33%;
       span {
         border-left: 1px solid black;
@@ -574,7 +574,7 @@ footer {
   align-items: center;
   text-align: center;
   padding: 20px 40px 20px 40px;
- 
+
   .button_about_me {
     margin-top: 15px;
     margin-left: 134px;
@@ -626,7 +626,6 @@ footer {
   }
 }
 .main_mobile_gallery {
- 
   img {
     padding-bottom: 10px;
     padding-top: 20px;
@@ -703,22 +702,85 @@ footer {
     line-height: 15px;
   }
 }
-.headline_line::before{
-    content: "";
-    position: absolute;
-    border-top: 1px solid $color-main;
-    width: 43px;
+.headline_line::before {
+  content: "";
+  position: absolute;
+  border-top: 1px solid $color-main;
+  width: 43px;
   margin-top: 11px;
   margin-left: -61px;
+}
+.headline_line::after {
+  content: "";
+  position: absolute;
+  border-top: 1px solid $color-main;
+  width: 43px;
+  margin-top: 11px;
+  margin-left: 11px;
+}
+.conteiner {
+  max-width: 1440px;
+  margin: 0 auto;
+  text-align: center;
+  .portfolio_headline {
+    font-size: $font-size-36;
+    font-weight: $fw4;
+    font-family: $font-raleway;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.065em;
+    padding-top: 40px;
+    span {
+      font-family: $font-raleway;
+      font-size: 30px;
+      font-weight: $fw3;
+      line-height: 35px;
+      text-align: center;
+      padding: 0px 100px 70px 100px;
+    }
   }
-  .headline_line::after{
-    content: "";
-    position: absolute;
-    border-top: 1px solid $color-main;
-    width: 43px;
-    margin-top: 11px;
-    margin-left: 11px;
+}
+.conteiner_gallery {
+  max-width: 1440px;
+  margin: 0 auto;
+  .portfolio_gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(392px, 1fr));
+    grid-row-gap: 54px;
+    grid-gap: 1vw;
+    padding: 100px;
+
+    p {
+    }
+    img {
+      max-width: 100%;
+    }
+    a {
+      text-align: center;
+      font-size: 30px;
+      font-weight: $fw3;
+      font-family: $font-raleway;
+      line-height: 35px;
+      color: $color-main;
+      text-align: center;
+    }
   }
+}
+.gallery_pages {
+  text-align: center;
+  position: relative;
+  bottom: 83px;
+  a {
+    font-weight: $fw5;
+    font-size: $font-size-24;
+    line-height: 31px;
+    color: $color-main;
+  }
+  span{
+    position: relative;
+    bottom: 4px;
+  }
+}
 
 @media only screen and (max-width: 700px) {
   .main_gallery {
@@ -742,7 +804,7 @@ footer {
     text-align: center;
     letter-spacing: 0.005em;
     color: #000000;
- 
+
     ::before {
       content: "";
       position: absolute;
@@ -808,7 +870,6 @@ footer {
     display: none;
   }
   main {
-  
     .about_me_picture {
       top: 1px;
       padding-left: 50px;
@@ -818,7 +879,6 @@ footer {
       width: 100%;
       position: relative;
     }
-    
   }
   .owl-item {
     width: 290px;
@@ -869,13 +929,12 @@ footer {
 
     text-align: start;
     text-transform: uppercase;
-    
-    span{
+
+    span {
       padding-left: 88px;
-      
     }
   }
- /* .carousel_headline
+  /* .carousel_headline
     ::before {
       content: "";
       position: absolute;
@@ -947,12 +1006,12 @@ footer {
       align-items: center;
     }
   }
-/*  .nav_footer {
+  /*  .nav_footer {
     margin: 0 auto;
     white-space: nowrap;
     flex-wrap: nowrap;
   }*/
-  .about_me_discription{
+  .about_me_discription {
     width: 100%;
   }
 }
@@ -980,28 +1039,23 @@ footer {
     display: flex;
     margin: 0 auto;
     text-align: center;
-flex-wrap: nowrap;
+    flex-wrap: nowrap;
     a {
       align-items: center;
     }
-   
   }
-  footer{
-   
- .logo{
+  footer {
+    .logo {
       border: none;
       margin: 0 auto;
     }
-   
-    
-    .nav_footer{
+
+    .nav_footer {
       display: flex;
       margin: 0 auto;
     }
-}
   }
-
-
+}
 
 @media only screen and (max-width: 850px) {
   .application_form {
