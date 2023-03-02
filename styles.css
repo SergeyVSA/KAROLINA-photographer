@@ -197,7 +197,7 @@ main .about_me img {
 .carousel {
   max-width: 1440px;
   margin: 0 auto;
-  display: flex;
+  /* display: flex;*/
 }
 
 .owl-dots {
@@ -682,12 +682,7 @@ footer .footer_icon {
   margin-left: 11px;
 }
 
-.conteiner {
-  max-width: 1440px;
-  margin: 0 auto;
-  text-align: center;
-}
-.conteiner .portfolio_headline {
+.portfolio_headline {
   font-size: 36px;
   font-weight: 400;
   font-family: "Raleway", sans-serif;
@@ -696,7 +691,12 @@ footer .footer_icon {
   letter-spacing: 0.065em;
   padding-top: 40px;
 }
-.conteiner .portfolio_headline span {
+.portfolio_headline .conteiner {
+  max-width: 1440px;
+  margin: 0 auto;
+  text-align: center;
+}
+.portfolio_headline span {
   font-family: "Raleway", sans-serif;
   font-size: 30px;
   font-weight: 300;
@@ -743,6 +743,713 @@ footer .footer_icon {
 .gallery_pages span {
   position: relative;
   bottom: 4px;
+}
+
+.conteiner_wedding_gallery {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 80px;
+}
+.conteiner_wedding_gallery .wedding_gallery {
+  display: grid;
+  /*grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));*/
+  grid-template-areas: "1 2 3 4";
+  justify-content: center;
+}
+.conteiner_price {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.conteiner_price .price_headline {
+  font-size: 36px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.065em;
+  padding-top: 90px;
+  padding-bottom: 61px;
+  line-height: 58px;
+}
+
+.wedding_price_headline {
+  font-size: 36px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 100px;
+}
+.wedding_price_headline ::before {
+  content: "";
+  border: 1px solid #000000;
+  position: absolute;
+  width: 37%;
+  bottom: 19px;
+  margin-left: -41%;
+}
+.wedding_price_headline ::after {
+  content: "";
+  border: 1px solid #000000;
+  position: absolute;
+  width: 80%;
+  bottom: 19px;
+}
+
+.conteiner_wedding_price {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 50px;
+}
+.conteiner_wedding_price .wedding_price {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.conteiner_wedding_price .wedding_price .wedding_price_minimum {
+  width: 382px;
+  background-color: #e5dfdb;
+  height: 1%;
+}
+.conteiner_wedding_price .wedding_price .wedding_price_minimum .wedding_price_h {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.065em;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.conteiner_wedding_price .wedding_price .wedding_price_minimum span {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.065em;
+  padding-top: 40px;
+  padding-bottom: 18px;
+  display: block;
+}
+.conteiner_wedding_price .wedding_price .wedding_price_minimum img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.conteiner_wedding_price .wedding_price .wedding_price_minimum p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.065em;
+  padding-left: 11px;
+  padding-bottom: 25px;
+}
+.conteiner_wedding_price .wedding_price .wedding_price_minimum a {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  width: 360px;
+  background-color: #bd8d71;
+  color: #ffffff;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.065em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 18px;
+}
+.conteiner_wedding_price .wedding_price .wedding_price_medium {
+  width: 382px;
+  background-color: #e5dfdb;
+  height: 1%;
+}
+.conteiner_wedding_price .wedding_price .wedding_price_medium .wedding_price_h {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.065em;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.conteiner_wedding_price .wedding_price .wedding_price_medium span {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.065em;
+  padding-top: 40px;
+  padding-bottom: 18px;
+  display: block;
+}
+.conteiner_wedding_price .wedding_price .wedding_price_medium img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.conteiner_wedding_price .wedding_price .wedding_price_medium p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.065em;
+  padding-left: 11px;
+  padding-bottom: 25px;
+}
+.conteiner_wedding_price .wedding_price .wedding_price_medium a {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  width: 360px;
+  background-color: #bd8d71;
+  color: #ffffff;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.065em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 18px;
+}
+.conteiner_wedding_price .wedding_price .wedding_price_premium {
+  width: 382px;
+  background-color: #e5dfdb;
+  height: 1%;
+}
+.conteiner_wedding_price .wedding_price .wedding_price_premium .wedding_price_h {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.065em;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.conteiner_wedding_price .wedding_price .wedding_price_premium span {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.065em;
+  padding-top: 40px;
+  padding-bottom: 18px;
+  display: block;
+}
+.conteiner_wedding_price .wedding_price .wedding_price_premium img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.conteiner_wedding_price .wedding_price .wedding_price_premium p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.065em;
+  padding-left: 11px;
+  padding-bottom: 25px;
+}
+.conteiner_wedding_price .wedding_price .wedding_price_premium a {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  width: 360px;
+  background-color: #bd8d71;
+  color: #ffffff;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.065em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 18px;
+}
+
+.family_price_headline {
+  font-size: 36px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 50px;
+}
+.family_price_headline ::before {
+  content: "";
+  border: 1px solid #000000;
+  position: absolute;
+  width: 37%;
+  bottom: 19px;
+  margin-left: -41%;
+}
+.family_price_headline ::after {
+  content: "";
+  border: 1px solid #000000;
+  position: absolute;
+  width: 80%;
+  bottom: 19px;
+}
+
+.conteiner_family_price {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 50px;
+}
+.conteiner_family_price .family_price {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.conteiner_family_price .family_price .family_price_family {
+  width: 360px;
+}
+.conteiner_family_price .family_price .family_price_family .cost {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.065em;
+  display: block;
+}
+.conteiner_family_price .family_price .family_price_family .wedding_price_h {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.065em;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.conteiner_family_price .family_price .family_price_family span {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.065em;
+  padding-top: 40px;
+  padding-bottom: 18px;
+  display: block;
+}
+.conteiner_family_price .family_price .family_price_family img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.conteiner_family_price .family_price .family_price_family p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.065em;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+.conteiner_family_price .family_price .family_price_family a {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  width: 220px;
+  background-color: #bd8d71;
+  color: #ffffff;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.065em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 18px;
+}
+.conteiner_family_price .family_price .family_price_birthday {
+  width: 360px;
+}
+.conteiner_family_price .family_price .family_price_birthday .cost {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.065em;
+  display: block;
+}
+.conteiner_family_price .family_price .family_price_birthday .wedding_price_h {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.065em;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.conteiner_family_price .family_price .family_price_birthday span {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.065em;
+  padding-top: 40px;
+  padding-bottom: 18px;
+  display: block;
+}
+.conteiner_family_price .family_price .family_price_birthday img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.conteiner_family_price .family_price .family_price_birthday p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.065em;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+.conteiner_family_price .family_price .family_price_birthday a {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  width: 220px;
+  background-color: #bd8d71;
+  color: #ffffff;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.065em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 18px;
+}
+.conteiner_family_price .family_price .family_price_love_story {
+  width: 360px;
+}
+.conteiner_family_price .family_price .family_price_love_story .cost {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.065em;
+  display: block;
+}
+.conteiner_family_price .family_price .family_price_love_story .wedding_price_h {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.065em;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.conteiner_family_price .family_price .family_price_love_story span {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.065em;
+  padding-top: 40px;
+  padding-bottom: 18px;
+  display: block;
+}
+.conteiner_family_price .family_price .family_price_love_story img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.conteiner_family_price .family_price .family_price_love_story p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.065em;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+.conteiner_family_price .family_price .family_price_love_story a {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  width: 220px;
+  background-color: #bd8d71;
+  color: #ffffff;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.065em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 18px;
+}
+
+.other_price_headline {
+  font-size: 36px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 50px;
+  margin-top: 80px;
+}
+.other_price_headline ::before {
+  content: "";
+  border: 1px solid #000000;
+  position: absolute;
+  width: 37%;
+  bottom: 19px;
+  margin-left: -41%;
+}
+.other_price_headline ::after {
+  content: "";
+  border: 1px solid #000000;
+  position: absolute;
+  width: 80%;
+  bottom: 19px;
+}
+
+.conteiner_other_price {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 50px;
+  margin-bottom: 120px;
+}
+.conteiner_other_price .other_price {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.conteiner_other_price .other_price .other_price_individual {
+  width: 360px;
+}
+.conteiner_other_price .other_price .other_price_individual .cost {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.065em;
+  display: block;
+}
+.conteiner_other_price .other_price .other_price_individual .wedding_price_h {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.065em;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.conteiner_other_price .other_price .other_price_individual span {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.065em;
+  padding-top: 40px;
+  padding-bottom: 18px;
+  display: block;
+}
+.conteiner_other_price .other_price .other_price_individual img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.conteiner_other_price .other_price .other_price_individual p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.065em;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+.conteiner_other_price .other_price .other_price_individual a {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  width: 220px;
+  background-color: #bd8d71;
+  color: #ffffff;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.065em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 18px;
+}
+.conteiner_other_price .other_price .other_price_content {
+  width: 360px;
+}
+.conteiner_other_price .other_price .other_price_content .cost {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.065em;
+  display: block;
+}
+.conteiner_other_price .other_price .other_price_content .wedding_price_h {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.065em;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.conteiner_other_price .other_price .other_price_content span {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.065em;
+  padding-top: 40px;
+  padding-bottom: 18px;
+  display: block;
+}
+.conteiner_other_price .other_price .other_price_content img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.conteiner_other_price .other_price .other_price_content p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.065em;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+.conteiner_other_price .other_price .other_price_content a {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  width: 220px;
+  background-color: #bd8d71;
+  color: #ffffff;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.065em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 18px;
+}
+
+.contacts_headline {
+  font-size: 36px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 100px;
+  margin-top: 99px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contacts_conteiner {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+.contacts_conteiner .contacts_main {
+  display: flex;
+  justify-content: space-around;
+}
+.contacts_conteiner .contacts_main .contacts_me {
+  position: relative;
+  top: 137px;
+}
+.contacts_conteiner .contacts_main .contacts_me p {
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  line-height: 28px;
+  text-align: justify;
+}
+.contacts_conteiner .contacts_main .contacts_me span {
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 28px;
+}
+.contacts_conteiner .contacts_main .contacts_me a {
+  color: #000000;
+  padding-bottom: 50px;
+}
+.contacts_conteiner .contacts_main .contacts_me .contacts_icon {
+  margin-top: 50px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.contacts_conteiner .contacts_main .application_contacts p {
+  font-size: 26px;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  line-height: 31px;
+  text-align: center;
+  letter-spacing: 0.015em;
+  color: #050505;
+}
+.contacts_conteiner .contacts_main .application_contacts input {
+  width: 283px;
+  background: rgba(229, 223, 219, 0.9);
+  border: 1px solid #000000;
+  padding-bottom: 28px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 21px;
+  color: #000000;
+  margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 700px) {
