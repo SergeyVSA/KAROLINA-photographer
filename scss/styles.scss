@@ -401,6 +401,7 @@ main {
 footer {
   .conteiner {
     max-width: 1440px;
+    height: auto;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -409,7 +410,7 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   background-color: $background-secondary;
-  padding: 137px 100px 150px 50px;
+  padding: 100px 100px 25px 50px;
 
   .nav_footer {
     display: flex;
@@ -451,9 +452,17 @@ footer {
     margin-bottom: 31px;
     align-items: center;
   }
+  p {
+    font-family: $font-roboto;
+    font-weight: $fw3;
+    font-size: $font-size-14;
+    text-align: center;
+    color: $color-main;
+    margin-top: 75px;
+  }
 }
 .hidden {
-  display: none !important ;
+  display: none !important;
 }
 .mobile_header {
   .mobile_menu_btn {
@@ -483,12 +492,22 @@ footer {
   .dropdown {
     position: relative;
     display: inline-block;
+    span {
+      a {
+        font-family: $font-raleway;
+        font-weight: $fw5;
+        font-size: $font-size-24;
+        color: $color-main;
+        line-height: 40px;
+      }
+    }
   }
   .dropbtn {
     background: none;
-    color: black;
+    color: $color-main;
     border: none;
-    cursor: pointer;
+    font-family: $font-raleway;
+    font-weight: $fw5;
     font-size: $font-size-24;
   }
   .dropdown-content {
@@ -498,25 +517,26 @@ footer {
     font-size: $font-size-18;
     font-family: $font-raleway;
     font-weight: $fw5;
+    a {
+      color: black;
+
+      text-decoration: none;
+      display: block;
+    }
   }
-  .dropdown-content a {
-    color: black;
-    padding: 5px;
-    text-decoration: none;
-    display: block;
-  }
+
   .dropdown-content a:hover {
     text-decoration: underline;
   }
   .show {
     display: block !important;
   }
-  a {
+  /* a {
     color: $color-main;
-    font-size: $font-size-24;
+    font-size: $font-size-18;
     font-weight: $fw5;
     font-family: $font-raleway;
-  }
+  }*/
   .contact {
     background-color: #e5dfdb;
     width: 330px;
@@ -765,9 +785,14 @@ footer {
       line-height: 35px;
       color: $color-main;
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
   }
 }
+
 .gallery_pages {
   text-align: center;
   position: relative;
@@ -788,13 +813,15 @@ footer {
   margin: 0 auto;
   padding: 80px;
   .wedding_gallery {
-    display: grid;
-    /*grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));*/
-    grid-template-areas: "1 2 3 4";
-
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-items: center;
   }
   img {
+    max-width: 100%;
+    height: auto;
   }
 }
 .conteiner_price {
@@ -845,6 +872,7 @@ footer {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    gap: 10px;
     .wedding_price_minimum {
       width: 382px;
       background-color: $background-secondary;
@@ -882,7 +910,6 @@ footer {
         line-height: 28px;
         letter-spacing: 0.065em;
         padding-left: 11px;
-        padding-bottom: 25px;
       }
       a {
         padding-top: 11px;
@@ -940,7 +967,6 @@ footer {
         line-height: 28px;
         letter-spacing: 0.065em;
         padding-left: 11px;
-        padding-bottom: 25px;
       }
       a {
         padding-top: 11px;
@@ -998,7 +1024,6 @@ footer {
         line-height: 28px;
         letter-spacing: 0.065em;
         padding-left: 11px;
-        padding-bottom: 25px;
       }
       a {
         padding-top: 11px;
@@ -1101,7 +1126,7 @@ footer {
         letter-spacing: 0.065em;
         padding-left: 5px;
         padding-right: 5px;
-        padding-bottom: 25px;
+
         text-align: center;
       }
       a {
@@ -1168,7 +1193,7 @@ footer {
         letter-spacing: 0.065em;
         padding-left: 5px;
         padding-right: 5px;
-        padding-bottom: 25px;
+
         text-align: center;
       }
       a {
@@ -1235,7 +1260,7 @@ footer {
         letter-spacing: 0.065em;
         padding-left: 5px;
         padding-right: 5px;
-        padding-bottom: 25px;
+
         text-align: center;
       }
       a {
@@ -1342,7 +1367,7 @@ footer {
         letter-spacing: 0.065em;
         padding-left: 5px;
         padding-right: 5px;
-        padding-bottom: 25px;
+
         text-align: center;
       }
       a {
@@ -1409,7 +1434,7 @@ footer {
         letter-spacing: 0.065em;
         padding-left: 5px;
         padding-right: 5px;
-        padding-bottom: 25px;
+
         text-align: center;
       }
       a {
@@ -1435,16 +1460,18 @@ footer {
 }
 
 .contacts_headline {
+  margin-bottom: 100px;
+  margin-top: 99px;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1 {
   font-size: $font-size-36;
   font-family: $font-raleway;
   font-weight: $fw5;
   line-height: 42px;
   text-align: center;
   position: relative;
-  margin-bottom: 100px;
-  margin-top: 99px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .contacts_conteiner {
@@ -1489,23 +1516,248 @@ footer {
         text-align: center;
         letter-spacing: 0.015em;
         color: #050505;
+        /*span::before {
+          content: "";
+          width: 100%;
+          position: absolute;
+          border-top: 1px solid black;*/
       }
-      input {
-        width: 283px;
-        background: rgba(229, 223, 219, 0.9);
-        border: 1px solid #000000;
-        padding-bottom: 28px;
-        font-family: $font-roboto;
-        font-size: 18px;
-        font-weight: $fw3;
-        line-height: 21px;
-        color: #000000;
-        margin-bottom: 20px;
-      }
+    }
+    input {
+      width: 283px;
+      background: rgba(229, 223, 219, 0.9);
+      border: 1px solid #000000;
+      padding: 14px;
+      font-family: $font-roboto;
+      font-size: 18px;
+      font-weight: $fw3;
+      line-height: 21px;
+      color: #000000;
+      margin-bottom: 20px;
+    }
+  }
+  .button_application_contacts {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    a {
+      background-color: $background-button;
+      color: $color-button;
+      border-radius: 5px;
+      font-family: $font-roboto;
+      font-weight: $fw5;
+      font-size: $font-size-18;
+      line-height: 21px;
+      padding: 18px 72px 18px 72px;
+      text-align: center;
+      margin-bottom: 70px;
     }
   }
 }
 
+.contacts_description {
+  margin: 0 auto;
+  max-width: 1440px;
+  h2 {
+    font-size: 32px;
+    text-align: center;
+    font-family: $font-raleway;
+    font-weight: 500;
+    line-height: 50px;
+    padding: 0px 50px;
+  }
+  p {
+    font-size: 30px;
+    font-family: $font-raleway;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    margin-bottom: 90px;
+    line-height: 40px;
+  }
+}
+.mobile_contacts {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .application_contacts_mobile {
+    p {
+      font-size: $font-size-26;
+      font-weight: $fw4;
+      font-family: $font-raleway;
+      line-height: 31px;
+      text-align: center;
+      letter-spacing: 0.015em;
+      color: #050505;
+      /*span::before {
+        content: "";
+        width: 100%;
+        position: absolute;
+        border-top: 1px solid black;*/
+    }
+    input {
+      width: 283px;
+      background: rgba(229, 223, 219, 0.9);
+      border: 1px solid #000000;
+      padding: 14px;
+      font-family: $font-roboto;
+      font-size: 18px;
+      font-weight: $fw3;
+      line-height: 21px;
+      color: #000000;
+      margin-bottom: 20px;
+    }
+    .button_application_contacts {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      a {
+        background-color: $background-button;
+        color: $color-button;
+        border-radius: 5px;
+        font-family: $font-roboto;
+        font-weight: $fw5;
+        font-size: $font-size-18;
+        line-height: 21px;
+        padding: 18px 72px 18px 72px;
+        text-align: center;
+        margin-bottom: 70px;
+      }
+    }
+  }
+  .contacts_me_mobile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    p {
+      font-size: $font-size-24;
+      font-family: $font-roboto;
+      font-weight: $fw3;
+      line-height: 28px;
+      text-align: center;
+    }
+    span {
+      font-size: $font-size-24;
+      font-family: $font-roboto;
+      font-weight: $fw4;
+      line-height: 28px;
+      text-align: center;
+    }
+    a {
+      color: #000000;
+      padding-bottom: 50px;
+      text-align: center;
+    }
+    .contacts_icon {
+      margin-top: 50px;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+  }
+}
+.reviews_conteiner {
+  max-width: 1440px;
+  margin: 0 auto;
+  .reviews {
+    border: 2px solid #ccc;
+    background-color: $background-secondary;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0;
+
+    img {
+      float: left;
+      margin-right: 20px;
+      border-radius: 50%;
+    }
+    span {
+      font-size: 20px;
+      margin-right: 15px;
+    }
+  }
+}
+
+.reviews_description {
+  margin: 0 auto;
+  font-size: $font-size-24;
+  font-family: $font-raleway;
+  font-weight: $fw4;
+  padding: 20px;
+  text-align: center;
+  line-height: 37px;
+}
+.headline_reviews {
+  font-size: $font-size-36;
+  font-family: $font-raleway;
+  font-weight: $fw3;
+  padding-top: 50px;
+}
+.rewiews_form {
+  margin: 0 auto;
+  max-width: 1440px;
+  form {
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 40px;
+    border-radius: 5px;
+    background: $background-secondary;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.45);
+    p {
+      font-family: $font-raleway;
+      font-size: $font-size-18;
+      color: $color-main;
+      text-align: center;
+      line-height: 20px;
+    }
+    .textbox {
+      height: 50px;
+      width: 100%;
+      border-radius: 3px;
+      border: rgba(0, 0, 0, 0.3) 2px solid;
+      box-sizing: border-box;
+      font-family: $font-roboto;
+      font-size: $font-size-18;
+      padding: 10px;
+      margin-bottom: 30px;
+      background: rgba(255, 255, 255, 0.4);
+    }
+    .message {
+      background: rgba(255, 255, 255, 0.4);
+      width: 100%;
+      height: 120px;
+      border: rgba(0, 0, 0, 0.3) 2px solid;
+      box-sizing: border-box;
+      font-size: $font-size-18;
+      font-family: $font-roboto;
+      border-radius: 3px;
+      display: block;
+      padding: 10px;
+      margin-bottom: 30px;
+      overflow: hidden;
+    }
+    .button {
+      height: 50px;
+      width: 154px;
+      border-radius: 3px;
+      border: rgba(0, 0, 0, 0.3) 0px solid;
+      box-sizing: border-box;
+      padding: 10px;
+      background-color: $background-button;
+      color: $color-button;
+      font-family: $font-roboto;
+      font-weight: $fw4;
+      font-size: 16pt;
+      transition: background 0.4s;
+      cursor: pointer;
+    }
+  }
+}
 @media only screen and (max-width: 700px) {
   .main_gallery {
     display: none;
@@ -1692,6 +1944,23 @@ footer {
   .about_me_headline {
     display: none;
   }
+
+  .contacts_main {
+    display: none !important ;
+  }
+  .contacts_description {
+    h2 {
+      font-size: 20px;
+    }
+    p {
+      font-size: $font-size-18;
+    }
+  }
+  .contacts_headline {
+    h1 {
+      font-size: $font-size-24;
+    }
+  }
 }
 
 @media only screen and (min-width: 800px) {
@@ -1712,6 +1981,9 @@ footer {
     display: none;
   }
   .mobile_feedback {
+    display: none;
+  }
+  .mobile_contacts {
     display: none;
   }
 }

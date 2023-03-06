@@ -1,16 +1,15 @@
 $(function () {
+
+    let currentPage = 1;
+    let totalPages = 100;
+
     $('.owl-carousel').owlCarousel({
         loop: true,
         margin: 10,
         autoWidth:true,
         nav: true,
         dots: false,
-        Object: true
-        
-        
-    })
-    $('.owl-carousel').owlCarousel({
-       
+        Object: true,
         responsive:{
             0:{
                 items:1
@@ -21,8 +20,23 @@ $(function () {
             1000:{
                 items:5
             }
-        }
-    })
+        },
+        onChange: function(event){
+            if(event.property.name != "position"){
+                return;
+            }
+            currentPage++;
+            if(currentPage > totalPages){
+                currentPage = 1;
+            }
+            updatePage();
+        },
+        
+    });
+    function updatePage(){
+        document.querySelector("#owl-page-current").innerHTML = currentPage;
+    }
+
     
 });
 function myFunction() {
@@ -58,4 +72,5 @@ window.addEventListener("DOMContentLoaded", function () {
     });
    
 });
+
 

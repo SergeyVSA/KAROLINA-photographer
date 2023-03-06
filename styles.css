@@ -368,10 +368,11 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   background-color: #e5dfdb;
-  padding: 137px 100px 150px 50px;
+  padding: 100px 100px 25px 50px;
 }
 footer .conteiner {
   max-width: 1440px;
+  height: auto;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -416,6 +417,14 @@ footer .footer_icon {
   margin-bottom: 31px;
   align-items: center;
 }
+footer p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  text-align: center;
+  color: #000000;
+  margin-top: 75px;
+}
 
 .hidden {
   display: none !important;
@@ -444,16 +453,30 @@ footer .footer_icon {
   right: 0px;
   top: 61px;
   z-index: 1;
+  /* a {
+    color: $color-main;
+    font-size: $font-size-18;
+    font-weight: $fw5;
+    font-family: $font-raleway;
+  }*/
 }
 .mobile_menu .dropdown {
   position: relative;
   display: inline-block;
 }
+.mobile_menu .dropdown span a {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #000000;
+  line-height: 40px;
+}
 .mobile_menu .dropbtn {
   background: none;
-  color: black;
+  color: #000000;
   border: none;
-  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
   font-size: 24px;
 }
 .mobile_menu .dropdown-content {
@@ -466,7 +489,6 @@ footer .footer_icon {
 }
 .mobile_menu .dropdown-content a {
   color: black;
-  padding: 5px;
   text-decoration: none;
   display: block;
 }
@@ -475,12 +497,6 @@ footer .footer_icon {
 }
 .mobile_menu .show {
   display: block !important;
-}
-.mobile_menu a {
-  color: #000000;
-  font-size: 24px;
-  font-weight: 500;
-  font-family: "Raleway", sans-serif;
 }
 .mobile_menu .contact {
   background-color: #e5dfdb;
@@ -727,6 +743,10 @@ footer .footer_icon {
   line-height: 35px;
   color: #000000;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .gallery_pages {
@@ -751,11 +771,17 @@ footer .footer_icon {
   padding: 80px;
 }
 .conteiner_wedding_gallery .wedding_gallery {
-  display: grid;
-  /*grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));*/
-  grid-template-areas: "1 2 3 4";
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: center;
 }
+.conteiner_wedding_gallery img {
+  max-width: 100%;
+  height: auto;
+}
+
 .conteiner_price {
   max-width: 1440px;
   margin: 0 auto;
@@ -805,6 +831,7 @@ footer .footer_icon {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  gap: 10px;
 }
 .conteiner_wedding_price .wedding_price .wedding_price_minimum {
   width: 382px;
@@ -844,7 +871,6 @@ footer .footer_icon {
   line-height: 28px;
   letter-spacing: 0.065em;
   padding-left: 11px;
-  padding-bottom: 25px;
 }
 .conteiner_wedding_price .wedding_price .wedding_price_minimum a {
   padding-top: 11px;
@@ -901,7 +927,6 @@ footer .footer_icon {
   line-height: 28px;
   letter-spacing: 0.065em;
   padding-left: 11px;
-  padding-bottom: 25px;
 }
 .conteiner_wedding_price .wedding_price .wedding_price_medium a {
   padding-top: 11px;
@@ -958,7 +983,6 @@ footer .footer_icon {
   line-height: 28px;
   letter-spacing: 0.065em;
   padding-left: 11px;
-  padding-bottom: 25px;
 }
 .conteiner_wedding_price .wedding_price .wedding_price_premium a {
   padding-top: 11px;
@@ -1059,7 +1083,6 @@ footer .footer_icon {
   letter-spacing: 0.065em;
   padding-left: 5px;
   padding-right: 5px;
-  padding-bottom: 25px;
   text-align: center;
 }
 .conteiner_family_price .family_price .family_price_family a {
@@ -1125,7 +1148,6 @@ footer .footer_icon {
   letter-spacing: 0.065em;
   padding-left: 5px;
   padding-right: 5px;
-  padding-bottom: 25px;
   text-align: center;
 }
 .conteiner_family_price .family_price .family_price_birthday a {
@@ -1191,7 +1213,6 @@ footer .footer_icon {
   letter-spacing: 0.065em;
   padding-left: 5px;
   padding-right: 5px;
-  padding-bottom: 25px;
   text-align: center;
 }
 .conteiner_family_price .family_price .family_price_love_story a {
@@ -1295,7 +1316,6 @@ footer .footer_icon {
   letter-spacing: 0.065em;
   padding-left: 5px;
   padding-right: 5px;
-  padding-bottom: 25px;
   text-align: center;
 }
 .conteiner_other_price .other_price .other_price_individual a {
@@ -1361,7 +1381,6 @@ footer .footer_icon {
   letter-spacing: 0.065em;
   padding-left: 5px;
   padding-right: 5px;
-  padding-bottom: 25px;
   text-align: center;
 }
 .conteiner_other_price .other_price .other_price_content a {
@@ -1383,16 +1402,19 @@ footer .footer_icon {
 }
 
 .contacts_headline {
+  margin-bottom: 100px;
+  margin-top: 99px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
   font-size: 36px;
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   line-height: 42px;
   text-align: center;
   position: relative;
-  margin-bottom: 100px;
-  margin-top: 99px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .contacts_conteiner {
@@ -1438,18 +1460,245 @@ footer .footer_icon {
   text-align: center;
   letter-spacing: 0.015em;
   color: #050505;
+  /*span::before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    border-top: 1px solid black;*/
 }
-.contacts_conteiner .contacts_main .application_contacts input {
+.contacts_conteiner .contacts_main input {
   width: 283px;
   background: rgba(229, 223, 219, 0.9);
   border: 1px solid #000000;
-  padding-bottom: 28px;
+  padding: 14px;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 300;
   line-height: 21px;
   color: #000000;
   margin-bottom: 20px;
+}
+.contacts_conteiner .button_application_contacts {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.contacts_conteiner .button_application_contacts a {
+  background-color: #bd8d71;
+  color: #ebebeb;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 18px 72px 18px 72px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.contacts_description {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+.contacts_description h2 {
+  font-size: 32px;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  line-height: 50px;
+  padding: 0px 50px;
+}
+.contacts_description p {
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+  margin-bottom: 90px;
+  line-height: 40px;
+}
+
+.mobile_contacts {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.mobile_contacts .application_contacts_mobile p {
+  font-size: 26px;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  line-height: 31px;
+  text-align: center;
+  letter-spacing: 0.015em;
+  color: #050505;
+  /*span::before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    border-top: 1px solid black;*/
+}
+.mobile_contacts .application_contacts_mobile input {
+  width: 283px;
+  background: rgba(229, 223, 219, 0.9);
+  border: 1px solid #000000;
+  padding: 14px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 21px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+.mobile_contacts .application_contacts_mobile .button_application_contacts {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.mobile_contacts .application_contacts_mobile .button_application_contacts a {
+  background-color: #bd8d71;
+  color: #ebebeb;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 18px 72px 18px 72px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.mobile_contacts .contacts_me_mobile {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.mobile_contacts .contacts_me_mobile p {
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  line-height: 28px;
+  text-align: center;
+}
+.mobile_contacts .contacts_me_mobile span {
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+}
+.mobile_contacts .contacts_me_mobile a {
+  color: #000000;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.mobile_contacts .contacts_me_mobile .contacts_icon {
+  margin-top: 50px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.reviews_conteiner {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.reviews_conteiner .reviews {
+  border: 2px solid #ccc;
+  background-color: #e5dfdb;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0;
+}
+.reviews_conteiner .reviews img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+.reviews_conteiner .reviews span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+.reviews_description {
+  margin: 0 auto;
+  font-size: 24px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  padding: 20px;
+  text-align: center;
+  line-height: 37px;
+}
+
+.headline_reviews {
+  font-size: 36px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  padding-top: 50px;
+}
+
+.rewiews_form {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+.rewiews_form form {
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 40px;
+  border-radius: 5px;
+  background: #e5dfdb;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.45);
+}
+.rewiews_form form p {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  color: #000000;
+  text-align: center;
+  line-height: 20px;
+}
+.rewiews_form form .textbox {
+  height: 50px;
+  width: 100%;
+  border-radius: 3px;
+  border: rgba(0, 0, 0, 0.3) 2px solid;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  padding: 10px;
+  margin-bottom: 30px;
+  background: rgba(255, 255, 255, 0.4);
+}
+.rewiews_form form .message {
+  background: rgba(255, 255, 255, 0.4);
+  width: 100%;
+  height: 120px;
+  border: rgba(0, 0, 0, 0.3) 2px solid;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  border-radius: 3px;
+  display: block;
+  padding: 10px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+.rewiews_form form .button {
+  height: 50px;
+  width: 154px;
+  border-radius: 3px;
+  border: rgba(0, 0, 0, 0.3) 0px solid;
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: #bd8d71;
+  color: #ebebeb;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16pt;
+  transition: background 0.4s;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 700px) {
@@ -1625,6 +1874,18 @@ footer .footer_icon {
   .about_me_headline {
     display: none;
   }
+  .contacts_main {
+    display: none !important;
+  }
+  .contacts_description h2 {
+    font-size: 20px;
+  }
+  .contacts_description p {
+    font-size: 18px;
+  }
+  .contacts_headline h1 {
+    font-size: 24px;
+  }
 }
 @media only screen and (min-width: 800px) {
   .mobile_about_me_headline {
@@ -1643,6 +1904,9 @@ footer .footer_icon {
     display: none;
   }
   .mobile_feedback {
+    display: none;
+  }
+  .mobile_contacts {
     display: none;
   }
 }
