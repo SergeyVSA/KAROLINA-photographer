@@ -901,7 +901,7 @@ footer {
   .wedding_gallery {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+   /* flex-wrap: wrap;*/
     gap: 5px;
     align-items: center;
   }
@@ -1001,7 +1001,7 @@ footer {
         padding-top: 11px;
         padding-bottom: 11px;
 
-        width: 360px;
+        width: 94%;
         background-color: $background-button;
         color: $color-button-mob;
         font-size: $font-size-24;
@@ -1058,7 +1058,7 @@ footer {
         padding-top: 11px;
         padding-bottom: 11px;
 
-        width: 360px;
+        width: 94%;
         background-color: $background-button;
         color: $color-button-mob;
         font-size: $font-size-24;
@@ -1115,7 +1115,7 @@ footer {
         padding-top: 11px;
         padding-bottom: 11px;
 
-        width: 360px;
+        width: 94%;
         background-color: $background-button;
         color: $color-button-mob;
         font-size: $font-size-24;
@@ -1770,7 +1770,7 @@ h1 {
   font-size: $font-size-24;
   font-family: $font-raleway;
   font-weight: $fw4;
-  padding: 20px;
+  padding: 40px;
   text-align: center;
   line-height: 37px;
 }
@@ -2079,6 +2079,7 @@ h1 {
       font-size: $font-size-24;
     }
   }
+
 }
 
 @media only screen and (min-width: 800px) {
