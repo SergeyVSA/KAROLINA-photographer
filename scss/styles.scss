@@ -43,6 +43,7 @@ html {
 }
 a {
   text-decoration: none;
+  
 }
 /*img{
     width: 100%;
@@ -65,6 +66,7 @@ header {
     text-align: center;
     color: $color-header;
     font-weight: $fw3;
+    
   }
   span {
     font-family: $font-roboto;
@@ -72,33 +74,50 @@ header {
     color: $color-header;
     text-align: center;
     font-weight: $fw3;
+   
   }
+  .logo:hover {
+      transform: scale(1.1);
+    }
   .nav_menu {
     font-family: $font-roboto;
     font-weight: $fw4;
     font-size: $font-size-14;
     line-height: 16px;
     padding: 0px 32px;
-
-    a {
-      padding: 36px;
-    }
+   
+     a {
+  padding: 36px;
+  
+      }
+       :hover{
+        text-decoration: underline;
   }
+  }
+  
+  }
+  
   a {
     color: $color-header;
+  
+    
   }
 
   .nav_icon {
     display: flex;
     flex-wrap: nowrap;
+    transition: all 400ms ease;
     a {
       padding: 5px;
     }
     img {
       min-width: 100%;
     }
+    :hover {
+      transform: scale(1.1);
+    }
   }
-}
+
 .main_picture {
   img {
     width: 100%;
@@ -175,6 +194,7 @@ main {
     }
     .button_about_me {
       margin-top: 40px;
+      
       a {
         background-color: $background-button;
         color: $color-button;
@@ -186,7 +206,27 @@ main {
         border-radius: 5px;
         padding: 18px 72px 18px 72px;
         text-align: center;
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.6);
+    position: relative;
       }
+    :before {
+        content: '';
+        position: absolute;
+        border: $background-button solid 4px;
+        border-radius: 5px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transition-duration: 0.3s;
+        transition-property: top, right, bottom, left;
+    }
+     :hover:before {
+        top: -8px;
+        right: -8px;
+        bottom: -8px;
+        left: -8px;
+    }
     }
 
     .about_me_picture {
@@ -319,14 +359,28 @@ main {
   font-weight: $fw4;
   font-family: $font-raleway;
   flex-wrap: wrap;
+  transition: all 400ms ease;
   a {
     color: $color-main;
     padding: 5px;
     line-height: 28px;
+   
+   
   }
+a:hover{
+  text-decoration: underline;
+}
+ 
   img {
     max-width: 100%;
+    
   }
+ img:hover {
+    transform: scale(0.97);
+    box-shadow: 5px 5px 5px rgb(78, 77, 77);
+  }
+ 
+  
 }
 .button_more {
   display: flex;
@@ -340,6 +394,10 @@ main {
   margin-top: 50px;
   a {
     color: $color-button-more;
+  }
+  :hover {
+    transform: scale(1.1);
+   
   }
 }
 .instagram_gallery {
@@ -385,6 +443,7 @@ main {
   width: 100%;
   display: flex;
   justify-content: center;
+
   a {
     background-color: $background-button;
     color: $color-button;
@@ -396,6 +455,28 @@ main {
     padding: 18px 72px 18px 72px;
     text-align: center;
     margin-bottom: 70px;
+       box-shadow: 0 0 1px rgba(0, 0, 0, 0.6);
+  position: relative;
+  }
+ 
+    
+  :before {
+      content: '';
+      position: absolute;
+      border: $background-button solid 4px;
+      border-radius: 5px;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transition-duration: 0.3s;
+      transition-property: top, right, bottom, left;
+  }
+   :hover:before {
+      top: -8px;
+      right: -8px;
+      bottom: -8px;
+      left: -8px;
   }
 }
 footer {
@@ -460,6 +541,11 @@ footer {
     color: $color-main;
     margin-top: 75px;
   }
+  a:hover{
+   transform: scale(1.3);
+   text-decoration: underline;
+  }
+
 }
 .hidden {
   display: none !important;
@@ -1756,6 +1842,38 @@ h1 {
       transition: background 0.4s;
       cursor: pointer;
     }
+  }
+}
+.headline_about_me {
+  margin: 0 auto;
+  padding-top: 50px;
+  h1 {
+    font-size: 32px;
+    font-family: $font-raleway;
+    font-weight: $fw4;
+  }
+}
+.discription_about_me {
+  margin: 0 auto;
+  display: flex;
+  padding: 50px;
+  justify-content: center;
+  gap: 15px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  img{
+    max-width: 100%;
+  }
+  h2{
+    font-size: $font-size-24;
+    font-family: $font-roboto;
+    font-weight: $fw3;
+  }
+  p {
+    font-size: 22px;
+    font-family: $font-roboto;
+    font-weight: $fw3;
+    text-align: center;
   }
 }
 @media only screen and (max-width: 700px) {
