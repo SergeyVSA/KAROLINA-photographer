@@ -83,49 +83,22 @@ a {
   width: 100%;
 }
 
-.about_me_headline {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 65px 0px 65px 0px;
+.about_me_headline h1 {
   font-family: "Raleway", sans-serif;
-  overflow: hidden;
   font-weight: 400;
   font-size: 36px;
   line-height: 42px;
   text-align: center;
   color: #000000;
-  max-width: 1440px;
-  margin: 0px auto;
-  position: relative;
+  padding-bottom: 30px;
 }
-.about_me_headline span {
+.about_me_headline h1 span {
   font-size: 24px;
 }
-.about_me_headline .about_me_headline .heading {
-  display: inline-block;
-  vertical-align: middle;
-}
-.about_me_headline .about_me_headline,
-.about_me_headline span:before,
-.about_me_headline :after {
-  content: "";
-  position: absolute;
-  width: 200px;
-  border-top: 1px solid #000000;
-}
-.about_me_headline :before {
-  margin-left: -387px;
-}
-.about_me_headline :after {
-  margin-left: 212px;
-}
 
-main {
+.about_me {
   max-width: 1440px;
   margin: 0 auto;
-}
-main .about_me {
   display: flex;
   justify-content: center;
   background-color: #e5dfdb;
@@ -134,7 +107,7 @@ main .about_me {
   flex-direction: row;
   flex-wrap: wrap;
 }
-main .about_me .about_me_discription {
+.about_me .about_me_discription {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 18px;
@@ -143,17 +116,17 @@ main .about_me .about_me_discription {
   /*  margin-right: 144px;*/
   width: 33%;
 }
-main .about_me .about_me_discription span {
+.about_me .about_me_discription span {
   border-left: 1px solid black;
   height: 175px;
   position: absolute;
   top: 48px;
   left: -26px;
 }
-main .about_me .button_about_me {
+.about_me .button_about_me {
   margin-top: 40px;
 }
-main .about_me .button_about_me a {
+.about_me .button_about_me a {
   background-color: #bd8d71;
   color: #ebebeb;
   font-family: "Roboto", sans-serif;
@@ -167,7 +140,7 @@ main .about_me .button_about_me a {
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.6);
   position: relative;
 }
-main .about_me .button_about_me :before {
+.about_me .button_about_me :before {
   content: "";
   position: absolute;
   border: #bd8d71 solid 4px;
@@ -179,43 +152,42 @@ main .about_me .button_about_me :before {
   transition-duration: 0.3s;
   transition-property: top, right, bottom, left;
 }
-main .about_me .button_about_me :hover:before {
+.about_me .button_about_me :hover:before {
   top: -8px;
   right: -8px;
   bottom: -8px;
   left: -8px;
 }
-main .about_me .about_me_picture {
+.about_me .about_me_picture {
   /*padding-left: 8px;*/
   padding-right: 50px;
   position: relative;
   bottom: 53px;
   height: auto;
 }
-main .about_me img {
+.about_me img {
   max-width: 100%;
 }
 
 .carousel_headline {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.carousel_headline h2 {
   height: 114px;
   font-family: "Raleway", sans-serif;
   font-weight: 300;
   font-size: 36px;
   line-height: 42px;
   text-align: start;
-  padding: 30px 0px 0px 190px;
+  padding: 64px 0px 0px 190px;
 }
-.carousel_headline span {
+.carousel_headline h2 span {
   padding: 0px 0px 0px 180px;
 }
 
-/*.carousel_headline::before {
-    content: "";
-    position: absolute;
-    width: 41%;
-    border: 1px solid $color-main;
-  }*/
 .counter {
+  max-width: 1440px;
   display: flex;
   flex-direction: row;
   justify-content: end;
@@ -230,6 +202,10 @@ main .about_me img {
   max-width: 1440px;
   margin: 0 auto;
   /* display: flex;*/
+}
+.carousel .item {
+  max-width: 680px;
+  aspect-ratio: 680/400;
 }
 
 .owl-dots {
@@ -275,18 +251,21 @@ main .about_me img {
 }
 
 .main_gallery_headline {
-  text-align: center;
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  font-size: 36px;
-  margin-top: 70px;
-  position: relative;
   /*:after {
       margin-left: 9%;
     }
   */
 }
-.main_gallery_headline span {
+.main_gallery_headline h2 {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  margin-top: 70px;
+  line-height: 42px;
+  position: relative;
+}
+.main_gallery_headline h2 span {
   font-size: 24px;
   line-height: 18px;
 }
@@ -299,10 +278,12 @@ main .about_me img {
   right: 404px;
 }
 
-.main_gallery {
+.gallery {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
+}
+.gallery .main_gallery {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -315,18 +296,18 @@ main .about_me img {
   flex-wrap: wrap;
   transition: all 400ms ease;
 }
-.main_gallery a {
+.gallery .main_gallery a {
   color: #000000;
   padding: 5px;
   line-height: 28px;
 }
-.main_gallery a:hover {
+.gallery .main_gallery a:hover {
   text-decoration: underline;
 }
-.main_gallery img {
+.gallery .main_gallery img {
   max-width: 100%;
 }
-.main_gallery img:hover {
+.gallery .main_gallery img:hover {
   transform: scale(0.97);
   box-shadow: 5px 5px 5px rgb(78, 77, 77);
 }
@@ -359,7 +340,7 @@ main .about_me img {
   flex-wrap: wrap;
 }
 
-.headline_form {
+.headline_form h4 {
   font-weight: 400;
   font-size: 26px;
   font-family: "Raleway", sans-serif;
@@ -738,7 +719,7 @@ footer a:hover {
   text-transform: uppercase;
   position: relative;
   padding-top: 30px;
-  padding-bottom: 40px;
+  padding-bottom: 71px;
 }
 .mobile_about_me_headline span {
   font-size: 13px;
@@ -1478,7 +1459,7 @@ footer a:hover {
 h1 {
   font-size: 36px;
   font-family: "Raleway", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 42px;
   text-align: center;
   position: relative;
@@ -1711,7 +1692,7 @@ h1 {
   margin-bottom: 15px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 50%;
+  max-width: 70%;
   height: auto;
   box-sizing: border-box;
   padding: 40px;
@@ -1804,7 +1785,7 @@ h1 {
 
 @media only screen and (max-width: 700px) {
   .main_gallery {
-    display: none;
+    display: none !important;
   }
 }
 @media only screen and (min-width: 700px) {
@@ -1816,7 +1797,7 @@ h1 {
   footer {
     display: none;
   }
-  .main_gallery_headline {
+  .main_gallery_headline h2 {
     font-size: 18px;
     font-family: "Raleway", sans-serif;
     font-weight: 400;
@@ -1824,6 +1805,8 @@ h1 {
     text-align: center;
     letter-spacing: 0.005em;
     color: #000000;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .main_gallery_headline ::before {
     content: "";
@@ -1896,8 +1879,9 @@ h1 {
     position: relative;
   }
   .owl-item {
-    width: 290px;
-    height: 192px;
+    max-width: 290px;
+    /* height: 192px;*/
+    aspect-ratio: 290/192;
   }
   .main_gallery img {
     max-width: 280px;
@@ -1930,17 +1914,18 @@ h1 {
     padding: 13px 34px 13px 34px;
     text-align: center;
   }
-  .carousel_headline {
+  .carousel_headline h2 {
     margin: 0 auto;
     position: relative;
     padding-left: 40px;
     font-family: "Raleway", sans-serif;
-    line-height: 26px;
+    top: 26px;
+    line-height: 20px;
     font-size: 18px;
     text-align: start;
     text-transform: uppercase;
   }
-  .carousel_headline span {
+  .carousel_headline h2 span {
     padding-left: 88px;
   }
   /* .carousel_headline
@@ -1986,6 +1971,20 @@ h1 {
   }
   .contacts_headline h1 {
     font-size: 24px;
+  }
+  .about_me {
+    width: 100%;
+    max-height: 250px;
+  }
+  .about_me .about_me_picture {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .about_me .about_me_picture img {
+    width: 70%;
+    min-width: 300px;
   }
 }
 @media only screen and (min-width: 800px) {
@@ -2035,23 +2034,6 @@ h1 {
     width: 100%;
   }
 }
-/*@media only screen and (max-width: 1366px) {
-  .about_me_picture {
-    margin: auto;
-  }
-  .about_me_discription {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-  .footer_icon {
-    display: flex;
-    margin: 0 auto;
-    a {
-      align-items: center;
-    }
-  }
-}*/
 @media only screen and (max-width: 1210px) {
   .footer_icon {
     display: flex;

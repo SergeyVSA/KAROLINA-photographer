@@ -43,7 +43,6 @@ html {
 }
 a {
   text-decoration: none;
-  
 }
 /*img{
     width: 100%;
@@ -66,7 +65,6 @@ header {
     text-align: center;
     color: $color-header;
     font-weight: $fw3;
-    
   }
   span {
     font-family: $font-roboto;
@@ -74,49 +72,44 @@ header {
     color: $color-header;
     text-align: center;
     font-weight: $fw3;
-   
   }
   .logo:hover {
-      transform: scale(1.1);
-    }
+    transform: scale(1.1);
+  }
   .nav_menu {
     font-family: $font-roboto;
     font-weight: $fw4;
     font-size: $font-size-14;
     line-height: 16px;
     padding: 0px 32px;
-   
-     a {
-  padding: 36px;
-  
-      }
-       :hover{
-        text-decoration: underline;
-  }
-  }
-  
-  }
-  
-  a {
-    color: $color-header;
-  
-    
-  }
 
-  .nav_icon {
-    display: flex;
-    flex-wrap: nowrap;
-    transition: all 400ms ease;
     a {
-      padding: 5px;
-    }
-    img {
-      min-width: 100%;
+      padding: 36px;
     }
     :hover {
-      transform: scale(1.1);
+      text-decoration: underline;
     }
   }
+}
+
+a {
+  color: $color-header;
+}
+
+.nav_icon {
+  display: flex;
+  flex-wrap: nowrap;
+  transition: all 400ms ease;
+  a {
+    padding: 5px;
+  }
+  img {
+    min-width: 100%;
+  }
+  :hover {
+    transform: scale(1.1);
+  }
+}
 
 .main_picture {
   img {
@@ -125,142 +118,115 @@ header {
 }
 
 .about_me_headline {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 65px 0px 65px 0px;
-  font-family: $font-raleway;
-  overflow: hidden;
-  font-weight: $fw4;
-  font-size: $font-size-36;
-  line-height: 42px;
-  text-align: center;
-  color: $color-main;
-  max-width: 1440px;
-  margin: 0px auto;
-  position: relative;
-
-  span {
-    font-size: $font-size-24;
-  }
-  .about_me_headline .heading {
-    display: inline-block;
-    vertical-align: middle;
-  }
-  .about_me_headline,
-  span:before,
-  :after {
-    content: "";
-    position: absolute;
-    width: 200px;
-    border-top: 1px solid $color-main;
-  }
-  :before {
-    margin-left: -387px;
-  }
-  :after {
-    margin-left: 212px;
+  h1 {
+    font-family: $font-raleway;
+    font-weight: $fw4;
+    font-size: $font-size-36;
+    line-height: 42px;
+    text-align: center;
+    color: $color-main;
+    padding-bottom: 30px;
+    span {
+      font-size: $font-size-24;
+    }
   }
 }
 
-main {
+.about_me {
   max-width: 1440px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  background-color: $background-secondary;
+  align-items: center;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
 
-  .about_me {
-    display: flex;
-    justify-content: center;
-    background-color: $background-secondary;
-    align-items: center;
+  .about_me_discription {
+    font-family: $font-roboto;
+    font-weight: $fw3;
+    font-size: $font-size-18;
+    line-height: 21px;
     position: relative;
-    flex-direction: row;
-    flex-wrap: wrap;
+    /*  margin-right: 144px;*/
+    width: 33%;
+    span {
+      border-left: 1px solid black;
+      height: 175px;
+      position: absolute;
+      top: 48px;
+      left: -26px;
+    }
+  }
+  .button_about_me {
+    margin-top: 40px;
 
-    .about_me_discription {
+    a {
+      background-color: $background-button;
+      color: $color-button;
       font-family: $font-roboto;
-      font-weight: $fw3;
       font-size: $font-size-18;
+      font-weight: $fw5;
       line-height: 21px;
+      border: 1px solid $background-button;
+      border-radius: 5px;
+      padding: 18px 72px 18px 72px;
+      text-align: center;
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0.6);
       position: relative;
-      /*  margin-right: 144px;*/
-      width: 33%;
-      span {
-        border-left: 1px solid black;
-        height: 175px;
-        position: absolute;
-        top: 48px;
-        left: -26px;
-      }
     }
-    .button_about_me {
-      margin-top: 40px;
-      
-      a {
-        background-color: $background-button;
-        color: $color-button;
-        font-family: $font-roboto;
-        font-size: $font-size-18;
-        font-weight: $fw5;
-        line-height: 21px;
-        border: 1px solid $background-button;
-        border-radius: 5px;
-        padding: 18px 72px 18px 72px;
-        text-align: center;
-        box-shadow: 0 0 1px rgba(0, 0, 0, 0.6);
-    position: relative;
-      }
     :before {
-        content: '';
-        position: absolute;
-        border: $background-button solid 4px;
-        border-radius: 5px;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        transition-duration: 0.3s;
-        transition-property: top, right, bottom, left;
+      content: "";
+      position: absolute;
+      border: $background-button solid 4px;
+      border-radius: 5px;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transition-duration: 0.3s;
+      transition-property: top, right, bottom, left;
     }
-     :hover:before {
-        top: -8px;
-        right: -8px;
-        bottom: -8px;
-        left: -8px;
-    }
-    }
-
-    .about_me_picture {
-      /*padding-left: 8px;*/
-      padding-right: 50px;
-      position: relative;
-      bottom: 53px;
-      height: auto;
-    }
-    img {
-      max-width: 100%;
+    :hover:before {
+      top: -8px;
+      right: -8px;
+      bottom: -8px;
+      left: -8px;
     }
   }
+
+  .about_me_picture {
+    /*padding-left: 8px;*/
+    padding-right: 50px;
+    position: relative;
+    bottom: 53px;
+    height: auto;
+  }
+  img {
+    max-width: 100%;
+  }
 }
+
 .carousel_headline {
-  height: 114px;
-  font-family: $font-raleway;
-  font-weight: $fw3;
-  font-size: $font-size-36;
-  line-height: 42px;
-  text-align: start;
-  padding: 30px 0px 0px 190px;
+  max-width: 1440px;
+  margin: 0 auto;
+  h2 {
+    height: 114px;
+    font-family: $font-raleway;
+    font-weight: $fw3;
+    font-size: $font-size-36;
+    line-height: 42px;
+    text-align: start;
+    padding: 64px 0px 0px 190px;
 
-  span {
-    padding: 0px 0px 0px 180px;
+    span {
+      padding: 0px 0px 0px 180px;
+    }
   }
 }
-/*.carousel_headline::before {
-    content: "";
-    position: absolute;
-    width: 41%;
-    border: 1px solid $color-main;
-  }*/
 .counter {
+  max-width: 1440px;
   display: flex;
   flex-direction: row;
   justify-content: end;
@@ -275,6 +241,10 @@ main {
   max-width: 1440px;
   margin: 0 auto;
   /* display: flex;*/
+  .item {
+    max-width: 680px;
+    aspect-ratio: 680 / 400;
+  }
 }
 .owl-dots {
   display: none;
@@ -318,16 +288,18 @@ main {
 }
 
 .main_gallery_headline {
-  text-align: center;
-  font-family: $font-raleway;
-  font-weight: $fw4;
-  font-size: $font-size-36;
-  margin-top: 70px;
-
-  position: relative;
-  span {
-    font-size: $font-size-24;
-    line-height: 18px;
+  h2 {
+    text-align: center;
+    font-family: $font-raleway;
+    font-weight: $fw4;
+    font-size: $font-size-36;
+    margin-top: 70px;
+    line-height: 42px;
+    position: relative;
+    span {
+      font-size: $font-size-24;
+      line-height: 18px;
+    }
   }
   .main_gallery_headline::after {
     position: absolute;
@@ -344,43 +316,40 @@ main {
   }
 */
 }
-
-.main_gallery {
+.gallery {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 35px;
-  margin-top: 70px;
-  text-align: center;
-  font-size: $font-size-24;
-  font-weight: $fw4;
-  font-family: $font-raleway;
-  flex-wrap: wrap;
-  transition: all 400ms ease;
-  a {
-    color: $color-main;
-    padding: 5px;
-    line-height: 28px;
-   
-   
+
+  .main_gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 35px;
+    margin-top: 70px;
+    text-align: center;
+    font-size: $font-size-24;
+    font-weight: $fw4;
+    font-family: $font-raleway;
+    flex-wrap: wrap;
+    transition: all 400ms ease;
+    a {
+      color: $color-main;
+      padding: 5px;
+      line-height: 28px;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    img {
+      max-width: 100%;
+    }
+    img:hover {
+      transform: scale(0.97);
+      box-shadow: 5px 5px 5px rgb(78, 77, 77);
+    }
   }
-a:hover{
-  text-decoration: underline;
-}
- 
-  img {
-    max-width: 100%;
-    
-  }
- img:hover {
-    transform: scale(0.97);
-    box-shadow: 5px 5px 5px rgb(78, 77, 77);
-  }
- 
-  
 }
 .button_more {
   display: flex;
@@ -397,7 +366,6 @@ a:hover{
   }
   :hover {
     transform: scale(1.1);
-   
   }
 }
 .instagram_gallery {
@@ -411,12 +379,14 @@ a:hover{
   flex-wrap: wrap;
 }
 .headline_form {
-  font-weight: $fw4;
-  font-size: $font-size-26;
-  font-family: $font-raleway;
-  line-height: 31px;
-  text-align: center;
-  margin-top: 150px;
+  h4 {
+    font-weight: $fw4;
+    font-size: $font-size-26;
+    font-family: $font-raleway;
+    line-height: 31px;
+    text-align: center;
+    margin-top: 150px;
+  }
 }
 .application_form {
   max-width: 1440px;
@@ -455,28 +425,27 @@ a:hover{
     padding: 18px 72px 18px 72px;
     text-align: center;
     margin-bottom: 70px;
-       box-shadow: 0 0 1px rgba(0, 0, 0, 0.6);
-  position: relative;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.6);
+    position: relative;
   }
- 
-    
+
   :before {
-      content: '';
-      position: absolute;
-      border: $background-button solid 4px;
-      border-radius: 5px;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      transition-duration: 0.3s;
-      transition-property: top, right, bottom, left;
+    content: "";
+    position: absolute;
+    border: $background-button solid 4px;
+    border-radius: 5px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition-duration: 0.3s;
+    transition-property: top, right, bottom, left;
   }
-   :hover:before {
-      top: -8px;
-      right: -8px;
-      bottom: -8px;
-      left: -8px;
+  :hover:before {
+    top: -8px;
+    right: -8px;
+    bottom: -8px;
+    left: -8px;
   }
 }
 footer {
@@ -541,11 +510,10 @@ footer {
     color: $color-main;
     margin-top: 75px;
   }
-  a:hover{
-   transform: scale(1.3);
-   text-decoration: underline;
+  a:hover {
+    transform: scale(1.3);
+    text-decoration: underline;
   }
-
 }
 .hidden {
   display: none !important;
@@ -799,7 +767,7 @@ footer {
   text-transform: uppercase;
   position: relative;
   padding-top: 30px;
-  padding-bottom: 40px;
+  padding-bottom: 71px;
 
   span {
     font-size: 13px;
@@ -901,7 +869,7 @@ footer {
   .wedding_gallery {
     display: flex;
     flex-direction: column;
-   /* flex-wrap: wrap;*/
+    /* flex-wrap: wrap;*/
     gap: 5px;
     align-items: center;
   }
@@ -1554,7 +1522,7 @@ footer {
 h1 {
   font-size: $font-size-36;
   font-family: $font-raleway;
-  font-weight: $fw5;
+  font-weight: $fw4;
   line-height: 42px;
   text-align: center;
   position: relative;
@@ -1787,7 +1755,7 @@ h1 {
     margin-bottom: 15px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 50%;
+    max-width: 70%;
     height: auto;
     box-sizing: border-box;
     padding: 40px;
@@ -1861,10 +1829,10 @@ h1 {
   gap: 15px;
   align-items: flex-start;
   flex-wrap: wrap;
-  img{
+  img {
     max-width: 100%;
   }
-  h2{
+  h2 {
     font-size: $font-size-24;
     font-family: $font-roboto;
     font-weight: $fw3;
@@ -1878,7 +1846,7 @@ h1 {
 }
 @media only screen and (max-width: 700px) {
   .main_gallery {
-    display: none;
+    display: none !important;
   }
 }
 @media only screen and (min-width: 700px) {
@@ -1891,13 +1859,17 @@ h1 {
     display: none;
   }
   .main_gallery_headline {
-    font-size: $font-size-18;
-    font-family: $font-raleway;
-    font-weight: $fw4;
-    line-height: 21px;
-    text-align: center;
-    letter-spacing: 0.005em;
-    color: #000000;
+    h2 {
+      font-size: $font-size-18;
+      font-family: $font-raleway;
+      font-weight: $fw4;
+      line-height: 21px;
+      text-align: center;
+      letter-spacing: 0.005em;
+      color: #000000;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
 
     ::before {
       content: "";
@@ -1975,8 +1947,9 @@ h1 {
     }
   }
   .owl-item {
-    width: 290px;
-    height: 192px;
+   max-width:290px;
+   /* height: 192px;*/
+    aspect-ratio: 290/192;
   }
   .main_gallery {
     img {
@@ -2013,19 +1986,21 @@ h1 {
     }
   }
   .carousel_headline {
-    margin: 0 auto;
-    position: relative;
-    padding-left: 40px;
-    font-family: $font-raleway;
+    h2 {
+      margin: 0 auto;
+      position: relative;
+      padding-left: 40px;
+      font-family: $font-raleway;
+      top: 26px;
+      line-height: 20px;
+      font-size: $font-size-18;
 
-    line-height: 26px;
-    font-size: $font-size-18;
+      text-align: start;
+      text-transform: uppercase;
 
-    text-align: start;
-    text-transform: uppercase;
-
-    span {
-      padding-left: 88px;
+      span {
+        padding-left: 88px;
+      }
     }
   }
   /* .carousel_headline
@@ -2079,7 +2054,21 @@ h1 {
       font-size: $font-size-24;
     }
   }
-
+  .about_me {
+    width: 100%;
+    max-height: 250px;
+    .about_me_picture {
+      margin: 0 auto;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      img {
+        width: 70%;
+        min-width: 300px;
+      }
+    }
+  }
+ 
 }
 
 @media only screen and (min-width: 800px) {
@@ -2130,24 +2119,6 @@ h1 {
     width: 100%;
   }
 }
-
-/*@media only screen and (max-width: 1366px) {
-  .about_me_picture {
-    margin: auto;
-  }
-  .about_me_discription {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-  .footer_icon {
-    display: flex;
-    margin: 0 auto;
-    a {
-      align-items: center;
-    }
-  }
-}*/
 
 @media only screen and (max-width: 1210px) {
   .footer_icon {

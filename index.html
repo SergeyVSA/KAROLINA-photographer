@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="libs/owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="libs/owlcarousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
         integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
 
-    <!-- <script src="js/jquery.min.js"></script>-->
+    <script src="js/jquery.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="script.js"></script>
 
@@ -26,59 +26,58 @@
 </head>
 
 <body>
-    <mobile_header>
-        <div class="mobile_header">
-            <div class="mobile_menu_btn">
-                <svg width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <line y1="1" x2="26" y2="1" stroke="#EBEBEB" stroke-width="2" />
-                    <line y1="11" x2="26" y2="11" stroke="#EBEBEB" stroke-width="2" />
-                    <line y1="21" x2="26" y2="21" stroke="#EBEBEB" stroke-width="2" />
-                </svg>
-            </div>
+    <div class="mobile_header">
+        <div class="mobile_menu_btn">
+            <svg width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line y1="1" x2="26" y2="1" stroke="#EBEBEB" stroke-width="2" />
+                <line y1="11" x2="26" y2="11" stroke="#EBEBEB" stroke-width="2" />
+                <line y1="21" x2="26" y2="21" stroke="#EBEBEB" stroke-width="2" />
+            </svg>
         </div>
-        <div class="mobile_menu hidden">
-            <div class="dropdown">
+    </div>
+    <div class="mobile_menu hidden">
+        <div class="dropdown">
 
-                <button onclick="myFunction()" class="dropbtn">ПОРТФОЛИО&#9660; </button>
-                <div id="myDropdown" class="dropdown-content">
-                    <a href="portfolio.html">Свадебная</a>
-                    <a href="#">Семейная</a>
-                    <a href="#">Индивидуальная</a>
-                    <a href="#">Для контента</a>
-                </div>
+            <button onclick="myFunction()" class="dropbtn">ПОРТФОЛИО&#9660; </button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="portfolio.html">Свадебная</a>
+                <a href="#">Семейная</a>
+                <a href="#">Индивидуальная</a>
+                <a href="#">Для контента</a>
+            </div>
+            <span>
+                <a href="price.html">ПРАЙС</a>
+                <br>
+                <a href="about_me.html">ОБО МНЕ</a>
+                <br>
+                <a href="contacts.html">КОНТАКТЫ</a>
+                <br>
+                <a href="reviews.html">ОТЗЫВЫ</a>
+            </span>
+        </div>
+
+        <div class="contact">
+            <div class="contact_mob">
                 <span>
-                    <a href="price.html">ПРАЙС</a>
-                    <br>
-                    <a href="about_me.html">ОБО МНЕ</a>
-                    <br>
-                    <a href="contacts.html">КОНТАКТЫ</a>
-                    <br>
-                    <a href="reviews.html">ОТЗЫВЫ</a>
+                    <a href="+375447375147">+375447375147</a>
                 </span>
             </div>
 
-            <div class="contact">
-                <div class="contact_mob">
-                    <span>
-                        <a href="+375447375147">+375447375147</a>
-                    </span>
-                </div>
+            <div class="mobile_icon">
+                <a href=""><img src="img/mobile/instagram.png" width="43" height="44" alt=" icon instagrem"></a>
+                <a href=""><img src="img/mobile/mywed.png" width="43" height="44" alt="icon mywed"></a>
+                <a href=""><img src="img/mobile/telegram.png" width="43" height="44" alt=" icon telegram"></a>
 
-                <div class="mobile_icon">
-                    <a href=""><img src="img/mobile/instagram.png" alt=""></a>
-                    <a href=""><img src="img/mobile/mywed.png" alt=""></a>
-                    <a href=""><img src="img/mobile/telegram.png" alt=""></a>
-                </div>
             </div>
-
         </div>
-    </mobile_header>
+
+    </div>
     <header>
         <div>
             <h2 class="logo">
-          <a href="index.html">KAROLINA
-                <br>
-                <span class="nav_headline_2">photographer</span></a>      
+                <a href="index.html">KAROLINA
+                    <br>
+                    <span class="nav_headline_2">photographer</span></a>
             </h2>
         </div>
         <nav class="nav_menu">
@@ -89,299 +88,297 @@
             <a href="reviews.html">ОТЗЫВЫ </a>
         </nav>
         <div class="nav_icon">
-            <a href="#"><img src="img/header/insta.png" alt="Instagram"></a>
-            <a href="#"><img src="img/header/icon.png" alt=""></a>
-            <a href="#"><img src="img/header/telegram.png" alt="Telegram"></a>
-
+            <a href="#"><img src="img/header/insta.png" width="27" height="27" alt="Instagram icon"></a>
+            <a href="#"><img src="img/header/icon.png" width="27" height="27" alt="mywed icon"></a>
+            <a href="#"><img src="img/header/telegram.png" width="27" height="27" alt="Telegram icon"></a>
         </div>
-
     </header>
-    <picture>
-        <div class="main_picture">
 
-            <img src="img/main_foto.jpg" alt="">
 
-        </div>
-    </picture>
-    <heading>
-        <div class="about_me_headline">
-            <div>
-                <h1>
-                ПРИВЕТ! МЕНЯ ЗОВУТ КАРОЛИНА
-                <br>
-                <span> ФОТОГРАФ В БЕЛАРУСИ</span>
-                </h1>
-            </div>
-        </div>
-    </heading>
-      <div class="mobile_about_me_headline">
-       
-         <div class="headline_line"> ПРИВЕТ! </div>
-           
-            МЕНЯ ЗОВУТ КАРОЛИНА
+
+
+
+
+
+
+
+    <div class="main_picture">
+
+        <img src="img/main_foto.jpg" width="1440" height="auto" alt="rings">
+
+    </div>
+
+
+    <div class="about_me_headline">
+
+        <h1>
+            ПРИВЕТ! МЕНЯ ЗОВУТ КАРОЛИНА
             <br>
             <span> ФОТОГРАФ В БЕЛАРУСИ</span>
-        </div>
-    <main>
-        <div class="about_me">
-            <div class="about_me_picture">
-                <img src="img/about_me.png" width="487" height="auto" alt="">
-            </div>
+        </h1>
 
+    </div>
 
-            <div class="about_me_discription">
-                <span></span>
-                <p> Специализируюсь на свадебных репортажах, семейных съемках, съемках для контента,
-                    бизнес фотографий, индивидуальных фотосессиях.
-                    <br>
-                    <br>
-                    В каждой съемке я раскрываю красоту человека и показываю настоящие кадры,
-                    летящие, наполненные жизнью и энергией, спокойствием и красотой.
-                    <br>
-                    <br>
-                    Каждая съемка - новые впечатления и новый опыт для меня, что несомненно нравится.
-                    Я вдохновляюсь людьми, местом и общением.
-                </p>
-                <div class="button_about_me">
-                    <a href="#">ПОДРОБНЕЕ</a>
-                </div>
-            </div>
+    <div class="mobile_about_me_headline">
 
-        </div>
-    </main>
+        <div class="headline_line"> ПРИВЕТ! </div>
 
-  
-
-        <heading>
-            <div class="carousel_headline">
-                <div>
-                    <p>
-                        ОТКРОЙТЕ ДЛЯ СЕБЯ
-                        <br>
-                        <span> МОЕ ВИДЕНИЕ</span>
-                    </p>
-                </div>
-            </div>
-
-        </heading>
-
-        <carousel>
-            <div class="counter">
-                <p> <span id="owl-page-current">1</span> / <span id="owl-page-total">100</span></p>
-            </div>
-            <div class="carousel">
-
-                <div class="owl-carousel owl-theme">
-                    <div class="item"> <img src="img/carousel/1.jpg" width="680" height="400" alt=""></div>
-                    <div class="item"> <img src="img/carousel/2.jpg" width="680" height="400" alt=""></div>
-
-                </div>
-
-            </div>
-         <!--  <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>--> 
-    
-        </div>
+        МЕНЯ ЗОВУТ КАРОЛИНА
         <br>
-    
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
+        <span> ФОТОГРАФ В БЕЛАРУСИ</span>
+    </div>
+
+    <div class="about_me">
+        <div class="about_me_picture">
+            <img src="img/about_me.png" width="487" height="auto" alt="photographer">
         </div>
-        </carousel>
-        <heading>
-            <div class="main_gallery_headline">
-                <p>ЭМОЦИИ И ПОРТРЕТЫ В РЕПОРТАЖАХ</p>
-                <span>НАШИ СВАДЕБНЫЕ И СЕМЕЙНЫЕ ФОТОСЕССИИ</span>
-            </div>
-        </heading>
-        <gallery>
-            <div class="main_gallery">
-                <div>
-                    <a href="#"><img src="img/main_gallery/1.jpg" style="width:380px" alt=""></a>
-                    <br>
-                    <a class="gallery_discription" href="#">КСЕНИЯ И СТАС &rarr;</a>
-                </div>
-                <div>
-                    <a href="#"><img src="img/main_gallery/2.jpg" style="width:380px" alt=""></a>
-                    <br>
-                    <a class="gallery_discription" href="#">ЕКАТЕРИНА &rarr;</a>
-                </div>
-                <div>
-                    <a href="#"><img src="img/main_gallery/3.jpg" style="width:380px" alt=""></a>
-                    <br>
-                    <a class="gallery_discription" href="#">ЮЛИЯ И ДЕНИС &rarr;</a>
-                </div>
 
-            </div>
-            <div class="button_more">
-                <a href="#">ПОДРОБНЕЕ &rarr;</a>
-            </div>
-            <div class="main_mobile_gallery">
-                <div>
-                    <img src="img/mobile_gallery/mobile_main_1.jpg" alt="">
 
-                    <a class="main_mobile_button" href=""><img src="img/mobile_gallery/button.png" alt=""></a>
+        <div class="about_me_discription">
+            <span></span>
+            <p> Специализируюсь на свадебных репортажах, семейных съемках, съемках для контента,
+                бизнес фотографий, индивидуальных фотосессиях. </p>
 
-                </div>
-                <div>
-                    <img src="img/mobile_gallery/mobile_main_2.jpg" alt="">
-                    <a class="main_mobile_button" href=""><img src="img/mobile_gallery/button.png" alt=""></a>
-                </div>
-                <span></span>
-            </div>
-        </gallery>
-        <div class="mobile_gallery">
-            <div>
-                <p>Love story</p>
+            <p> В каждой съемке я раскрываю красоту человека и показываю настоящие кадры,
+                летящие, наполненные жизнью и энергией, спокойствием и красотой.</p>
 
-                <img src="img/mobile_gallery/love_story.jpg" alt="">
-            </div>
-            <div>
-                <p>Семейные</p>
+            <p> Каждая съемка - новые впечатления и новый опыт для меня, что несомненно нравится.
+                Я вдохновляюсь людьми, местом и общением.</p>
 
-                <img src="img/mobile_gallery/family.jpg" alt="">
-            </div>
-            <div>
-                <p>Индивидуальные</p>
-
-                <img src="img/mobile_gallery/individual.jpg" alt="">
-            </div>
-            <div>
-                <p>Контент-съемки</p>
-
-                <img src="img/mobile_gallery/content_photo.jpg" alt="">
-            </div>
-        </div>
-        <div class="mobile_feedback">
-            <div class="headline"> Что говорят клиенты?</div>
-            <div>
-                <img src="img/mobile_feed/1.png" alt="">
-                <p>“Каролина, мы очень довольны снимками :-) Ни капли не сомневались в том, что они будут волшебные.
-                    Думаю
-                    понимаешь, что я хотела,
-                    что бы именно ты запечатлила моё прекрасное положение.
-                    Мы благодарны с мужем за твою работу, спасибо тебе за твой профессионализм.
-                    С тобой так классно, задорно и безумно приятно работать.
-                    Ты творишь магию и знаешь тот самый волшебный ингридиент, благодаря которому получаются такие
-                    красивые и
-                    нежные фотографии,
-                    они непременно заполнят наш семейный альбом! Удачи тебе и идти только вверх!”
-                    <br>
-                    <span> Эльвира</span>
-                </p>
-            </div>
-            <div>
-                <img src="img/mobile_feed/2.png" alt="">
-                <p>“Однажды и навсегда.....
-                    Мы встретились с прекрасным фотографом @karolina.eshina и не расстанемся уже никогда :-)
-                    Каролина, спасибо тебе огромное за твой профессионализм, за лёгкость в процессе создания фото, за
-                    бомбические кадры и воспоминания, которые останутся с нами на всю жизнь!”
-                    <br>
-                    <span>Анастасия</span>
-                </p>
-            </div>
-
-            <div>
-                <img src="img/mobile_feed/3.png" alt="">
-                <p>
-                    “Доброго вечерочка))
-                    Каролинааааа, фото просто супер :-) такие живые, яркие) все эмоции переданы настолько живо :-)
-                    Очень довольны) очень рады, что работали с тобой) даже не назовешь это работой,
-                    это было очень классное времяпрепровождение) настолько классно и непринуждённо))
-                    ты настоящий профессионал и мастер своего дела)
-                    Спасибо, что настолько круто сохранила воспоминания о нашем дне).”
-                    <br>
-                    <span> Анастасия</span>
-                </p>
-            </div>
             <div class="button_about_me">
-                <a href="#">ПОДРОБНЕЕ</a>
+                <a href="about_me.html">ПОДРОБНЕЕ</a>
             </div>
         </div>
-        <socials>
-            <div class="instagram_gallery">
 
-                <img src="img/instagram/1.jpg" alt="">
-                <img src="img/instagram/2.jpg" alt="">
-                <img src="img/instagram/3.jpg" alt="">
-                <img src="img/instagram/button_insta.jpg" alt="">
-                <img src="img/instagram/4.jpg" alt="">
-                <img src="img/instagram/5.jpg" alt="">
-                <img src="img/instagram/6.jpg" alt="">
+    </div>
+
+
+
+
+
+    <div class="carousel_headline">
+
+        <h2>
+            ОТКРОЙТЕ ДЛЯ СЕБЯ
+            <br>
+            <span> МОЕ ВИДЕНИЕ</span>
+        </h2>
+
+
+    </div>
+
+
+
+
+    <div class="counter">
+        <p> <span id="owl-page-current">1</span> / <span id="owl-page-total">100</span></p>
+    </div>
+    <div class="carousel">
+
+        <div class="owl-carousel owl-theme">
+            <div class="item"> <img src="img/carousel/1.jpg" width="680" height="400" alt="girl and boy"></div>
+            <div class="item"> <img src="img/carousel/2.jpg" width="680" height="400" alt="girl and boy"></div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="main_gallery_headline">
+        <h2>
+            ЭМОЦИИ И ПОРТРЕТЫ В РЕПОРТАЖАХ
+            <br>
+            <span>НАШИ СВАДЕБНЫЕ И СЕМЕЙНЫЕ ФОТОСЕССИИ</span>
+        </h2>
+    </div>
+
+    <div class="gallery">
+        <div class="main_gallery">
+            <div>
+                <a href="#"><img src="img/main_gallery/1.jpg" width="380" alt="newlyweds"></a>
+                <br>
+                <a class="gallery_discription" href="#">КСЕНИЯ И СТАС &rarr;</a>
             </div>
-        </socials>
-
-        <div class="headline_form">
-            <p>ОСТАВЬТЕ ЗАЯВКУ</p>
-        </div>
-        <div class="application_form">
-
-            <label> <input type="text" placeholder="ИМЯ:" required></label>
-            <label> <input type="date" placeholder="ДАТА СЪЕМКИ:" required></label>
-            <label><input type="tel" placeholder="ТЕЛЕФОН:" required></label>
-
-        </div>
-        <div class="button_application_form">
-            <a href="#">ОТПРАВИТЬ</a>
-        </div>
-        <footer>
-            <div class="conteiner">
-                <h2 class="logo">
-                    KAROLINA
-                    <br>
-                    <span class="nav_headline_2">photographer</span>
-                </h2>
-
-                <div class="nav_footer">
-                    <div>
-                        <a href="#"> Портфолио</a>
-
-                        <br>
-                        <a href="#"> Прайс</a>
-
-                    </div>
-                    <div>
-                        <a href="about_me.html">О фотографе</a>
-
-                        <br>
-                        <a href="contacts.html">Контакты</a>
-
-                    </div>
-                    <div>
-                        <a href="#"> Сертификат</a>
-
-                        <br>
-                        <a href="reviews.html">Отзывы</a>
-
-                    </div>
-                </div>
-                <div class="footer_icon">
-                    <a href="#"><img src="img/footer/instagram.png" alt=""></a>
-                    <a href="#"><img src="img/footer/vk.png" alt=""></a>
-                    <a href="#"><img src="img/footer/mywed.png" alt=""></a>
-                    <a href="#"><img src="img/footer/telegram .png" alt=""></a>
-                </div>
+            <div>
+                <a href="#"><img src="img/main_gallery/2.jpg" width="380" alt="bride"></a>
+                <br>
+                <a class="gallery_discription" href="#">ЕКАТЕРИНА &rarr;</a>
             </div>
-            <p>2023 Все права защищены</p>
-        </footer>
-        <div class="mobile_footer">
+            <div>
+                <a href="#"><img src="img/main_gallery/3.jpg" width="380" alt="newlyweds"></a>
+                <br>
+                <a class="gallery_discription" href="#">ЮЛИЯ И ДЕНИС &rarr;</a>
+            </div>
+
+        </div>
+        <div class="button_more">
+            <a href="#">ПОДРОБНЕЕ &rarr;</a>
+        </div>
+        <div class="main_mobile_gallery">
+            <div>
+                <img src="img/mobile_gallery/mobile_main_1.jpg" width="280" height="auto" alt="newlyweds">
+
+                <a class="main_mobile_button" href=""><img src="img/mobile_gallery/button.png" alt="button"></a>
+
+            </div>
+            <div>
+                <img src="img/mobile_gallery/mobile_main_2.jpg" width="280" height="auto"  alt="bride">
+                <a class="main_mobile_button" href=""><img src="img/mobile_gallery/button.png" alt="button"></a>
+            </div>
+            <span></span>
+        </div>
+    </div>
+    <div class="mobile_gallery">
+        <div>
+            <p>Love story</p>
+
+            <img src="img/mobile_gallery/love_story.jpg" width="280" height="auto" alt=" love story">
+        </div>
+        <div>
+            <p>Семейные</p>
+
+            <img src="img/mobile_gallery/family.jpg" width="280" height="auto" alt="family">
+        </div>
+        <div>
+            <p>Индивидуальные</p>
+
+            <img src="img/mobile_gallery/individual.jpg" width="280" height="auto" alt="girl">
+        </div>
+        <div>
+            <p>Контент-съемки</p>
+
+            <img src="img/mobile_gallery/content_photo.jpg" width="280" height="auto" alt="laptop">
+        </div>
+    </div>
+    <div class="mobile_feedback">
+        <div class="headline"> Что говорят клиенты?</div>
+        <div>
+            <img src="img/mobile_feed/1.png" width="120" height="120" alt="girl">
+            <p>“Каролина, мы очень довольны снимками :-) Ни капли не сомневались в том, что они будут волшебные.
+                Думаю
+                понимаешь, что я хотела,
+                что бы именно ты запечатлила моё прекрасное положение.
+                Мы благодарны с мужем за твою работу, спасибо тебе за твой профессионализм.
+                С тобой так классно, задорно и безумно приятно работать.
+                Ты творишь магию и знаешь тот самый волшебный ингридиент, благодаря которому получаются такие
+                красивые и
+                нежные фотографии,
+                они непременно заполнят наш семейный альбом! Удачи тебе и идти только вверх!”
+                <br>
+                <span> Эльвира</span>
+            </p>
+        </div>
+        <div>
+            <img src="img/mobile_feed/2.png" width="120" height="120" alt="family">
+            <p>“Однажды и навсегда.....
+                Мы встретились с прекрасным фотографом @karolina.eshina и не расстанемся уже никогда :-)
+                Каролина, спасибо тебе огромное за твой профессионализм, за лёгкость в процессе создания фото, за
+                бомбические кадры и воспоминания, которые останутся с нами на всю жизнь!”
+                <br>
+                <span>Анастасия</span>
+            </p>
+        </div>
+
+        <div>
+            <img src="img/mobile_feed/3.png" width="120" height="120" alt="girl">
+            <p>
+                “Доброго вечерочка))
+                Каролинааааа, фото просто супер :-) такие живые, яркие) все эмоции переданы настолько живо :-)
+                Очень довольны) очень рады, что работали с тобой) даже не назовешь это работой,
+                это было очень классное времяпрепровождение) настолько классно и непринуждённо))
+                ты настоящий профессионал и мастер своего дела)
+                Спасибо, что настолько круто сохранила воспоминания о нашем дне).”
+                <br>
+                <span> Анастасия</span>
+            </p>
+        </div>
+        <div class="button_about_me">
+            <a href="reviews.html">ПОДРОБНЕЕ</a>
+        </div>
+    </div>
+
+    <div class="instagram_gallery">
+
+        <img src="img/instagram/1.jpg" width="161" height="161" alt="man on a bike">
+        <img src="img/instagram/2.jpg" width="161" height="161" alt="girl">
+        <img src="img/instagram/3.jpg" width="161" height="161" alt="girl">
+        <img src="img/instagram/button_insta.jpg" width="237" height="161"  alt="logo instagram">
+        <img src="img/instagram/4.jpg" width="161" height="161" alt="newlyweds">
+        <img src="img/instagram/5.jpg" width="161" height="161" alt="newlyweds">
+        <img src="img/instagram/6.jpg" width="161" height="161" alt="newlyweds">
+    </div>
+
+
+    <div class="headline_form">
+        <h4> ОСТАВЬТЕ ЗАЯВКУ</h4>
+    </div>
+    <div class="application_form">
+
+        <label> <input type="text" placeholder="ИМЯ:" minlength="4" maxlength="10" required></label>
+        <label> <input type="date" name="ДАТА СЪЕМКИ:" min="2023-01-01" max="2025-12-31" required></label>
+        <label><input type="tel" placeholder="ТЕЛЕФОН:" minlength="9" maxlength="13" required></label>
+
+    </div>
+    <div class="button_application_form">
+        <a href="#">ОТПРАВИТЬ</a>
+    </div>
+    <footer>
+        <div class="conteiner">
             <h2 class="logo">
                 KAROLINA
                 <br>
                 <span class="nav_headline_2">photographer</span>
-                <br>
             </h2>
-            <a href="+375447375147">+375447375147</a>
 
-            <div class="mobile_footer_icon">
-                <a href=""><img src="img/mobile_footer/instagram.png" alt=""></a>
-                <a href=""><img src="img/mobile_footer/mywed.png" alt=""></a>
-                <a href=""><img src="img/mobile_footer/telegram.png" alt=""></a>
+            <div class="nav_footer">
+                <div>
+                    <a href="portfolio.html"> Портфолио</a>
+
+                    <br>
+                    <a href="price.html"> Прайс</a>
+
+                </div>
+                <div>
+                    <a href="about_me.html">О фотографе</a>
+
+                    <br>
+                    <a href="contacts.html">Контакты</a>
+
+                </div>
+                <div>
+                    <a href="#"> Сертификат</a>
+
+                    <br>
+                    <a href="reviews.html">Отзывы</a>
+
+                </div>
             </div>
-          
+            <div class="footer_icon">
+                <a href="#"><img src="img/footer/instagram.png" width="22" height="21" alt=" icon instagram "></a>
+                <a href="#"><img src="img/footer/vk.png" width="22" height="21" alt=" icon vk"></a>
+                <a href="#"><img src="img/footer/mywed.png" width="22" height="21" alt=" icon mywed"></a>
+                <a href="#"><img src="img/footer/telegram.png" width="22" height="21" alt=" icon telegram"></a>
+            </div>
         </div>
+        <p>2023 Все права защищены</p>
+    </footer>
+    <div class="mobile_footer">
+        <h2 class="logo">
+            KAROLINA
+            <br>
+            <span class="nav_headline_2">photographer</span>
+            <br>
+        </h2>
+        <a href="+375447375147">+375447375147</a>
+
+        <div class="mobile_footer_icon">
+            <a href=""><img src="img/mobile_footer/instagram.png" width="56" height="57" alt="icon instagram"></a>
+            <a href=""><img src="img/mobile_footer/mywed.png" width="56" height="57" alt="icon mywed"></a>
+            <a href=""><img src="img/mobile_footer/telegram.png" width="56" height="57" alt=" icon telegram"></a>
+        </div>
+
+    </div>
 </body>
 
 </html>
