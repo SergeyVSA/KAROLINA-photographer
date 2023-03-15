@@ -541,7 +541,7 @@ footer {
   position: absolute;
   right: 0px;
   top: 61px;
-  z-index: 1;
+  z-index: 2 !important;
 
   .dropdown {
     position: relative;
@@ -799,14 +799,16 @@ footer {
     margin: 0 auto;
     text-align: center;
   }
-  font-size: $font-size-36;
-  font-weight: $fw4;
-  font-family: $font-raleway;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.065em;
-  padding-top: 40px;
-  span {
+  h1 {
+    font-size: $font-size-36;
+    font-weight: $fw4;
+    font-family: $font-raleway;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.065em;
+    padding-top: 40px;
+  }
+  h2 {
     font-family: $font-raleway;
     font-size: 30px;
     font-weight: $fw3;
@@ -820,10 +822,16 @@ footer {
   max-width: 1440px;
   margin: 0 auto;
   .portfolio_gallery {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(auto-fill, minmax(392px, 1fr));
     padding: 100px;
+    justify-content: center;*/
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
     justify-content: center;
+    padding-left: 40px;
+    padding-right: 40px;
 
     p {
     }
@@ -850,7 +858,7 @@ footer {
 .gallery_pages {
   text-align: center;
   position: relative;
-  bottom: 83px;
+  bottom: 8px;
   a {
     font-weight: $fw5;
     font-size: $font-size-24;
@@ -882,40 +890,42 @@ footer {
   max-width: 1440px;
   margin: 0 auto;
   .price_headline {
-    font-size: $font-size-36;
-    font-family: $font-raleway;
-    font-weight: $fw4;
-    text-align: center;
-    letter-spacing: 0.065em;
-    padding-top: 90px;
-    padding-bottom: 61px;
-    line-height: 58px;
+    h1 {
+      font-size: $font-size-36;
+      font-family: $font-raleway;
+      font-weight: $fw4;
+      text-align: center;
+      letter-spacing: 0.065em;
+      padding-top: 90px;
+      padding-bottom: 61px;
+      line-height: 58px;
+    }
   }
 }
 .wedding_price_headline {
-  font-size: $font-size-36;
-  font-family: $font-raleway;
-  font-weight: $fw5;
-  line-height: 42px;
-  text-align: center;
-  position: relative;
-  margin-bottom: 100px;
-
-  ::before {
-    content: "";
-    border: 1px solid $color-main;
-    position: absolute;
-    width: 37%;
-    bottom: 19px;
-    margin-left: -41%;
+  h2 {
+    font-size: $font-size-36;
+    font-family: $font-raleway;
+    font-weight: $fw4;
+    line-height: 42px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 100px;
   }
-
-  ::after {
+  h2::before {
     content: "";
-    border: 1px solid $color-main;
+    border-top: 1px solid $color-main;
     position: absolute;
-    width: 80%;
+    width: 100%;
     bottom: 19px;
+    left: 0;
+  }
+  span {
+    background: $background-primary;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 0 2rem;
   }
 }
 .conteiner_wedding_price {
@@ -1101,29 +1111,29 @@ footer {
   }
 }
 .family_price_headline {
-  font-size: $font-size-36;
-  font-family: $font-raleway;
-  font-weight: $fw5;
-  line-height: 42px;
-  text-align: center;
-  position: relative;
-  margin-bottom: 50px;
-
-  ::before {
-    content: "";
-    border: 1px solid $color-main;
-    position: absolute;
-    width: 37%;
-    bottom: 19px;
-    margin-left: -41%;
+  h2 {
+    font-size: $font-size-36;
+    font-family: $font-raleway;
+    font-weight: $fw4;
+    line-height: 42px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 50px;
   }
-
-  ::after {
+  h2::before {
     content: "";
-    border: 1px solid $color-main;
+    border-top: 1px solid $color-main;
     position: absolute;
-    width: 80%;
+    width: 100%;
     bottom: 19px;
+    left: 0;
+  }
+  span {
+    background: $background-primary;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 0 2rem;
   }
 }
 
@@ -1340,30 +1350,29 @@ footer {
 }
 
 .other_price_headline {
-  font-size: $font-size-36;
-  font-family: $font-raleway;
-  font-weight: $fw5;
-  line-height: 42px;
-  text-align: center;
-  position: relative;
-  margin-bottom: 50px;
-  margin-top: 80px;
-
-  ::before {
-    content: "";
-    border: 1px solid $color-main;
-    position: absolute;
-    width: 37%;
-    bottom: 19px;
-    margin-left: -41%;
+  h2 {
+    font-size: $font-size-36;
+    font-family: $font-raleway;
+    font-weight: $fw4;
+    line-height: 42px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 50px;
   }
-
-  ::after {
+  h2::before {
     content: "";
-    border: 1px solid $color-main;
+    border-top: 1px solid $color-main;
     position: absolute;
-    width: 80%;
+    width: 100%;
     bottom: 19px;
+    left: 0;
+  }
+  span {
+    background: $background-primary;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 0 2rem;
   }
 }
 
@@ -1518,25 +1527,43 @@ footer {
   margin-top: 99px;
   margin-left: auto;
   margin-right: auto;
-}
-h1 {
-  font-size: $font-size-36;
-  font-family: $font-raleway;
-  font-weight: $fw4;
-  line-height: 42px;
-  text-align: center;
-  position: relative;
+
+  h1 {
+    font-size: $font-size-36;
+    font-family: $font-raleway;
+    font-weight: $fw4;
+    line-height: 42px;
+    text-align: center;
+    position: relative;
+  }
+  h1::before {
+    content: "";
+    border-top: 1px solid $color-main;
+    position: absolute;
+    width: 100%;
+    bottom: 19px;
+    left: 0;
+  }
+  span {
+    background: $background-primary;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 0 2rem;
+  }
 }
 
 .contacts_conteiner {
   margin: 0 auto;
   max-width: 1440px;
+  padding-bottom: 70px;
   .contacts_main {
     display: flex;
     justify-content: space-around;
     .contacts_me {
       position: relative;
       top: 137px;
+
       p {
         font-size: $font-size-24;
         font-family: $font-roboto;
@@ -1562,7 +1589,7 @@ h1 {
       }
     }
     .application_contacts {
-      p {
+      h3 {
         font-size: $font-size-26;
         font-weight: $fw4;
         font-family: $font-raleway;
@@ -1575,6 +1602,20 @@ h1 {
           width: 100%;
           position: absolute;
           border-top: 1px solid black;*/
+      }
+      h3::before {
+        content: "";
+        border-top: 1px solid $color-main;
+        position: absolute;
+        width: 60%;
+        left: 0;
+        margin-top: 17px;
+      }
+      span {
+        background: $background-primary;
+        position: relative;
+        z-index: 12;
+        display: inline-block;
       }
     }
     input {
@@ -1606,6 +1647,15 @@ h1 {
       text-align: center;
       margin-bottom: 70px;
     }
+
+    ::before {
+      content: "";
+      border-bottom: 1px solid $color-main;
+      position: absolute;
+      width: 83%;
+      right: 0;
+      margin-top: 115px;
+    }
   }
 }
 
@@ -1636,8 +1686,8 @@ h1 {
   align-items: center;
   flex-direction: column;
   .application_contacts_mobile {
-    p {
-      font-size: $font-size-26;
+    h3 {
+      font-size: 22px;
       font-weight: $fw4;
       font-family: $font-raleway;
       line-height: 31px;
@@ -1743,10 +1793,28 @@ h1 {
   line-height: 37px;
 }
 .headline_reviews {
-  font-size: $font-size-36;
-  font-family: $font-raleway;
-  font-weight: $fw3;
-  padding-top: 50px;
+  h1 {
+    font-size: $font-size-36;
+    font-family: $font-raleway;
+    font-weight: $fw3;
+    padding-top: 50px;
+    text-align: center;
+  }
+  h1::before {
+    content: "";
+    border-top: 1px solid $color-main;
+    position: absolute;
+    width: 100%;
+    margin-top: 21px;
+    left: 0;
+  }
+  span {
+    background: $background-primary;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 0 2rem;
+  }
 }
 .rewiews_form {
   margin: 0 auto;
@@ -1819,6 +1887,22 @@ h1 {
     font-size: 32px;
     font-family: $font-raleway;
     font-weight: $fw4;
+    text-align: center;
+  }
+  h1::before {
+    content: "";
+    border-top: 1px solid $color-main;
+    position: absolute;
+    width: 100%;
+    top: 177px;
+    left: 0;
+  }
+  span {
+    background: $background-primary;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 0 2rem;
   }
 }
 .discription_about_me {
@@ -1833,15 +1917,16 @@ h1 {
     max-width: 100%;
   }
   h2 {
-    font-size: $font-size-24;
+    font-size: $font-size-26;
     font-family: $font-roboto;
     font-weight: $fw3;
+    text-align: center;
   }
   p {
     font-size: 22px;
     font-family: $font-roboto;
     font-weight: $fw3;
-    text-align: center;
+    text-align: start;
   }
 }
 @media only screen and (max-width: 700px) {
@@ -1947,8 +2032,8 @@ h1 {
     }
   }
   .owl-item {
-   max-width:290px;
-   /* height: 192px;*/
+    max-width: 290px;
+    /* height: 192px;*/
     aspect-ratio: 290/192;
   }
   .main_gallery {
@@ -2041,15 +2126,22 @@ h1 {
   .contacts_main {
     display: none !important ;
   }
+
   .contacts_description {
     h2 {
       font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 50px;
     }
     p {
       font-size: $font-size-18;
+      text-align: start;
+      line-height: 27px;
+      margin-bottom: 30px;
     }
   }
   .contacts_headline {
+    margin-bottom: 35px;
     h1 {
       font-size: $font-size-24;
     }
@@ -2068,7 +2160,110 @@ h1 {
       }
     }
   }
- 
+  .portfolio_headline {
+    h1 {
+      font-size: $font-size-24;
+    }
+    h2 {
+      font-size: 16px;
+      padding: 30px;
+    }
+  }
+  .portfolio_gallery {
+    p {
+      font-size: 20px;
+    }
+  }
+  .conteiner_price {
+    .price_headline {
+      h1 {
+        font-size: $font-size-24;
+        padding-left: 20px;
+        padding-right: 20px;
+        line-height: 30px;
+      }
+    }
+  }
+  .wedding_price_headline {
+    h2 {
+      font-size: $font-size-24;
+      margin-bottom: 1px;
+    }
+  }
+  .family_price_headline {
+    h2 {
+      font-size: $font-size-24;
+    }
+  }
+  .other_price_headline {
+    h2 {
+      font-size: $font-size-24;
+    }
+  }
+  .conteiner_wedding_price {
+    padding: 0;
+  }
+  .wedding_price {
+    padding: 15px;
+    img {
+      max-width: 100%;
+      height: auto;
+      padding: 5px;
+    }
+  }
+  .conteiner_family_price {
+    padding: 0;
+  }
+  .family_price {
+    padding-left: 15px;
+    padding-right: 15px;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .conteiner_other_price {
+    padding: 0;
+  }
+  .other_price {
+    padding-left: 15px;
+    padding-right: 15px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .discription_about_me {
+    h2 {
+      font-size: 22px;
+    }
+    p {
+      font-size: $font-size-18;
+    }
+  }
+  .headline_about_me {
+    h1 {
+      font-size: 26px;
+      font-family: $font-raleway;
+      font-weight: $fw4;
+      text-align: center;
+    }
+    h1::before {
+      content: "";
+      border-top: 1px solid $color-main;
+      position: absolute;
+      width: 100%;
+      top: 144px;
+      left: 0;
+    }
+    span {
+      background: $background-primary;
+      position: relative;
+
+      display: inline-block;
+      padding: 0 2rem;
+    }
+  }
 }
 
 @media only screen and (min-width: 800px) {
