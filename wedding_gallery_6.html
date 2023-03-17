@@ -5,21 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link
         href="https://fonts.googleapis.com/css2?family=Parisienne&family=Raleway:wght@300;400;500&family=Roboto:wght@300;400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="libs/owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="libs/owlcarousel/owl.theme.default.min.css">
-    <link type="text/css" rel="stylesheet" href="libs/lightgallery/lightgallery.css" />
+    <link rel="stylesheet" href="libs/magnific-popup.css">
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
-        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <!-- <script src="js/jquery.min.js"></script>-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
-    <script src="js/lightgallery.min.js"></script>
     <script src="script.js"></script>
 
 
@@ -28,52 +23,51 @@
 </head>
 
 <body>
-    <mobile_header>
-        <div class="mobile_header">
-            <div class="mobile_menu_btn">
-                <svg width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <line y1="1" x2="26" y2="1" stroke="#EBEBEB" stroke-width="2" />
-                    <line y1="11" x2="26" y2="11" stroke="#EBEBEB" stroke-width="2" />
-                    <line y1="21" x2="26" y2="21" stroke="#EBEBEB" stroke-width="2" />
-                </svg>
-            </div>
+    <div class="mobile_header">
+        <div class="mobile_menu_btn">
+            <svg width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line y1="1" x2="26" y2="1" stroke="#EBEBEB" stroke-width="2" />
+                <line y1="11" x2="26" y2="11" stroke="#EBEBEB" stroke-width="2" />
+                <line y1="21" x2="26" y2="21" stroke="#EBEBEB" stroke-width="2" />
+            </svg>
         </div>
-        <div class="mobile_menu hidden">
-            <div class="dropdown">
+    </div>
+    <div class="mobile_menu hidden">
+        <div class="dropdown">
 
-                <button onclick="myFunction()" class="dropbtn">ПОРТФОЛИО&#9660; </button>
-                <div id="myDropdown" class="dropdown-content">
-                    <a href="portfolio.html">Свадебная</a>
-                    <a href="#">Семейная</a>
-                    <a href="#">Индивидуальная</a>
-                    <a href="#">Для контента</a>
-                </div>
+            <button onclick="myFunction()" class="dropbtn">ПОРТФОЛИО&#9660; </button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="portfolio.html">Свадебная</a>
+                <a href="#">Семейная</a>
+                <a href="#">Индивидуальная</a>
+                <a href="#">Для контента</a>
+            </div>
+            <span>
+                <a href="price.html">ПРАЙС</a>
+                <br>
+                <a href="about_me.html">ОБО МНЕ</a>
+                <br>
+                <a href="contacts.html">КОНТАКТЫ</a>
+                <a href="reviews.html">ОТЗЫВЫ</a>
+            </span>
+        </div>
+
+        <div class="contact">
+            <div class="contact_mob">
                 <span>
-                    <a href="price.html">ПРАЙС</a>
-                    <br>
-                    <a href="about_me.html">ОБО МНЕ</a>
-                    <br>
-                    <a href="contacts.html">КОНТАКТЫ</a>
-                    <a href="reviews.html">ОТЗЫВЫ</a>
+                    <a href="+375447375147">+375447375147</a>
                 </span>
             </div>
 
-            <div class="contact">
-                <div class="contact_mob">
-                    <span>
-                        <a href="+375447375147">+375447375147</a>
-                    </span>
-                </div>
-
-                <div class="mobile_icon">
-                    <a href=""><img src="img/mobile/instagram.png" alt=""></a>
-                    <a href=""><img src="img/mobile/mywed.png" alt=""></a>
-                    <a href=""><img src="img/mobile/telegram.png" alt=""></a>
-                </div>
+            <div class="mobile_icon">
+                <a href=""><img src="img/mobile/instagram.png" alt=""></a>
+                <a href=""><img src="img/mobile/mywed.png" alt=""></a>
+                <a href=""><img src="img/mobile/telegram.png" alt=""></a>
             </div>
-
         </div>
-    </mobile_header>
+
+    </div>
+
     <header>
         <div>
             <h2 class="logo">
@@ -97,74 +91,188 @@
         </div>
 
     </header>
-    <picture>
-        <div class="main_picture">
 
-            <img src="img/portfolio/main_portfolio_gallery.jpg" alt="">
+    <div class="main_picture">
 
-        </div>
-    </picture>
-    <headline>
+        <img src="img/portfolio/main_portfolio_gallery.jpg" alt="">
 
-        <div class="portfolio_headline">
-            <div class="conteiner">
-                <p>КСЕНИЯ И СТАС</p>
-            </div>
-        </div>
+    </div>
 
-        <div class="conteiner_wedding_gallery">
-            <div class="wedding_gallery">
-                <div>
+
+
+    <div class="portfolio_headline">
+
+        <h1>КСЕНИЯ И СТАС</h1>
+
+    </div>
+    <section class="gallery">
+        <div class="gallery-list">
+            <div>
+                <a href="img/portfolio/wedding/6/1.jpg" class="gallery-item">
+                    <div class="gallery-item-hover"></div>
                     <img src="img/portfolio/wedding/6/1.jpg" width="282" height="419" alt="bride and groom">
-                    <img src="img/portfolio/wedding/6/2.jpg" width="281" height="419" alt="bride and groom">
-                    <img src="img/portfolio/wedding/6/3.jpg" width="281" height="419" alt="bride and groom">
-                    <img src="img/portfolio/wedding/6/4.jpg" width="281" height="419" alt="bride and groom">
-                </div>
-                <div>
-                    <img src="img/portfolio/wedding/6/5.jpg" width="377" height="auto" alt="bride and groom">
-                    <img src="img/portfolio/wedding/6/6.jpg" width="377" height="auto" alt="bride and groom">
-                    <img src="img/portfolio/wedding/6/7.jpg" width="377" height="251" alt="bride and groom">
-                </div>
-                <div>
-                    <img src="img/portfolio/wedding/6/8.jpg" width="282" height="419" alt="bride and groom">
-                    <img src="img/portfolio/wedding/6/9.jpg" width="281" height="419" alt="bride and groom">
-                    <img src="img/portfolio/wedding/6/10.jpg" width="281" height="419" alt="bride and groom">
-                    <img src="img/portfolio/wedding/6/11.jpg" width="281" height="419" alt="bride and groom">
-                </div>
-                <div>
-                    <img src="img/portfolio/wedding/6/12.jpg" width="377" height="auto" alt="bride and groom">
-                    <img src="img/portfolio/wedding/6/13.jpg" width="377" height="auto" alt="bride and groom">
-                    <img src="img/portfolio/wedding/6/14.jpg" width="377" height="auto" alt="bride and groom">
-                </div>
-                <div>
-                    <img src="img/portfolio/wedding/6/15.jpg" width="282" height="419" alt="bride and groom">
-                    <img src="img/portfolio/wedding/6/16.jpg" width="281" height="419" alt="bride and groom">
-                    <img src="img/portfolio/wedding/6/17.jpg" width="281" height="419" alt="bride and groom">
-                    <img src="img/portfolio/wedding/6/18.jpg" width="281" height="419" alt="bride and groom">
-                </div>
-                <div>
-                    <img src="img/portfolio/wedding/6/19.jpg" width="282" height="419" alt="bride and groom">
-                    <img src="img/portfolio/wedding/6/20.jpg" width="281" height="419" alt="bride and groom">
-                    <img src="img/portfolio/wedding/6/21.jpg" width="281" height="419" alt="bride and groom">
-                    <img src="img/portfolio/wedding/6/22.jpg" width="281" height="419" alt="bride and groom">
-                </div>
-                <div>
-
-                    <img src="img/portfolio/wedding/6/23.jpg" width="377" height="auto" alt="bride and groom">
-                    <img src="img/portfolio/wedding/6/24.jpg" width="377" height="auto" alt="bride and groom">
-                    <img src="img/portfolio/wedding/6/25.jpg" width="377" height="auto" alt="bride and groom">
-                </div>
-                <div>
-                    <img src="img/portfolio/wedding/6/26.jpg" width="282" height="419" alt="bride and groom">
-                    <img src="img/portfolio/wedding/6/27.jpg" width="281" height="419" alt="bride and groom">
-                    <img src="img/portfolio/wedding/6/28.jpg" width="281" height="419" alt="bride and groom">
-                    <img src="img/portfolio/wedding/6/29.jpg" width="281" height="419" alt="bride and groom">
-                </div>
+                </a>
+                <a href="img/portfolio/wedding/6/2.jpg" class="gallery-item">
+                    <div class="gallery-item-hover"></div>
+                    <img src="img/portfolio/wedding/6/2.jpg" width="282" height="419" alt="bride and groom">
+                </a>
+                <a href="img/portfolio/wedding/6/3.jpg" class="gallery-item">
+                    <div class="gallery-item-hover"></div>
+                    <img src="img/portfolio/wedding/6/3.jpg" width="282" height="419" alt="bride and groom">
+                </a>
+                <a href="img/portfolio/wedding/6/4.jpg" class="gallery-item">
+                    <div class="gallery-item-hover"></div>
+                    <img src="img/portfolio/wedding/6/4.jpg" width="282" height="419" alt="bride and groom">
+                </a>
             </div>
+            <div>
+                <a href="img/portfolio/wedding/6/5.jpg" class="gallery-item">
+                    <div class="gallery-item-hover"></div>
+                    <img src="img/portfolio/wedding/6/5.jpg" width="377" height="auto" alt="bride and groom">
+                </a>
+
+                <a href="img/portfolio/wedding/6/6.jpg" class="gallery-item">
+                    <div class="gallery-item-hover"></div>
+                    <img src="img/portfolio/wedding/6/6.jpg" width="377" height="auto" alt="bride and groom">
+                </a>
+                <a href="img/portfolio/wedding/6/7.jpg" class="gallery-item">
+                    <div class="gallery-item-hover"></div>
+                    <img src="img/portfolio/wedding/6/7.jpg" width="377" height="auto" alt="bride and groom">
+                </a>
+            </div>
+            <div>
+                <a href="img/portfolio/wedding/6/8.jpg" class="gallery-item">
+                    <div class="gallery-item-hover"></div>
+                    <img src="img/portfolio/wedding/6/8.jpg" width="282" height="419" alt="bride and groom">
+                </a>
+                <a href="img/portfolio/wedding/6/9.jpg" class="gallery-item">
+                    <div class="gallery-item-hover"></div>
+                    <img src="img/portfolio/wedding/6/9.jpg" width="282" height="419" alt="bride and groom">
+                </a>
+                <a href="img/portfolio/wedding/6/10.jpg" class="gallery-item">
+                    <div class="gallery-item-hover"></div>
+                    <img src="img/portfolio/wedding/6/10.jpg" width="282" height="419" alt="bride and groom">
+                </a>
+
+                <a href="img/portfolio/wedding/6/11.jpg" class="gallery-item">
+                    <div class="gallery-item-hover"></div>
+                    <img src="img/portfolio/wedding/6/11.jpg" width="282" height="419" alt="bride and groom">
+                </a>
+            </div>
+            <div>
+                <a href="img/portfolio/wedding/6/12.jpg" class="gallery-item">
+                    <div class="gallery-item-hover"></div>
+                    <img src="img/portfolio/wedding/6/12.jpg" width="377" height="auto" alt="bride and groom">
+                </a>
+                <a href="img/portfolio/wedding/6/13.jpg" class="gallery-item">
+                    <div class="gallery-item-hover"></div>
+                    <img src="img/portfolio/wedding/6/13.jpg" width="377" height="auto" alt="bride and groom">
+                </a>
+
+
+                <a href="img/portfolio/wedding/6/14.jpg" class="gallery-item">
+                    <div class="gallery-item-hover"></div>
+                    <img src="img/portfolio/wedding/6/14.jpg" width="377" height="auto" alt="bride and groom">
+                </a>
+            </div>
+            <div>
+
+                <a href="img/portfolio/wedding/6/15.jpg" class="gallery-item">
+                    <div class="gallery-item-hover"></div>
+                    <img src="img/portfolio/wedding/6/15.jpg" width="282" height="419" alt="bride and groom">
+                </a>
+                <a href="img/portfolio/wedding/6/16.jpg" class="gallery-item">
+                    <div class="gallery-item-hover"></div>
+                    <img src="img/portfolio/wedding/6/16.jpg" width="282" height="419" alt="bride and groom">
+                </a>
+
+                <a href="img/portfolio/wedding/6/17.jpg" class="gallery-item">
+                    <div class="gallery-item-hover"></div>
+                    <img src="img/portfolio/wedding/6/17.jpg" width="282" height="419" alt="bride and groom">
+                </a>
+
+                <a href="img/portfolio/wedding/6/18.jpg" class="gallery-item">
+                    <div class="gallery-item-hover"></div>
+                    <img src="img/portfolio/wedding/6/18.jpg" width="282" height="419" alt="bride and groom">
+                </a>
+            </div>
+            <div>
+                <a href="img/portfolio/wedding/6/19.jpg" class="gallery-item">
+                    <div class="gallery-item-hover"></div>
+                    <img src="img/portfolio/wedding/6/19.jpg" width="282" height="419" alt="bride and groom">
+                </a>
+                <a href="img/portfolio/wedding/6/20.jpg" class="gallery-item">
+                    <div class="gallery-item-hover"></div>
+                    <img src="img/portfolio/wedding/6/20.jpg" width="282" height="419" alt="bride and groom">
+                </a>
+                <a href="img/portfolio/wedding/6/21.jpg" class="gallery-item">
+                    <div class="gallery-item-hover"></div>
+                    <img src="img/portfolio/wedding/6/21.jpg" width="282" height="419" alt="bride and groom">
+                </a>
+
+                <a href="img/portfolio/wedding/6/22.jpg" class="gallery-item">
+                    <div class="gallery-item-hover"></div>
+                    <img src="img/portfolio/wedding/6/22.jpg" width="282" height="419" alt="bride and groom">
+                </a>
+            </div>
+            <div>
+                <a href="img/portfolio/wedding/6/23.jpg" class="gallery-item">
+                    <div class="gallery-item-hover"></div>
+                    <img src="img/portfolio/wedding/6/23.jpg" width="377" height="auto" alt="bride and groom">
+                </a>
+                <a href="img/portfolio/wedding/6/24.jpg" class="gallery-item">
+                    <div class="gallery-item-hover"></div>
+                    <img src="img/portfolio/wedding/6/24.jpg" width="377" height="auto" alt="bride and groom">
+                </a>
+                <a href="img/portfolio/wedding/6/25.jpg" class="gallery-item">
+                    <div class="gallery-item-hover"></div>
+                    <img src="img/portfolio/wedding/6/25.jpg" width="377" height="auto" alt="bride and groom">
+                </a>
+            </div>
+
+            <div>
+                <a href="img/portfolio/wedding/6/26.jpg" class="gallery-item">
+                    <div class="gallery-item-hover"></div>
+                    <img src="img/portfolio/wedding/6/26.jpg" width="282" height="419" alt="bride and groom">
+                </a>
+                <a href="img/portfolio/wedding/6/27.jpg" class="gallery-item">
+                    <div class="gallery-item-hover"></div>
+                    <img src="img/portfolio/wedding/6/27.jpg" width="282" height="419" alt="bride and groom">
+                </a>
+                <a href="img/portfolio/wedding/6/28.jpg" class="gallery-item">
+                    <div class="gallery-item-hover"></div>
+                    <img src="img/portfolio/wedding/6/28.jpg" width="282" height="419" alt="bride and groom">
+                </a>
+                <a href="img/portfolio/wedding/6/29.jpg" class="gallery-item">
+                    <div class="gallery-item-hover"></div>
+                    <img src="img/portfolio/wedding/6/29.jpg" width="282" height="419" alt="bride and groom">
+                </a>
+            </div>
+
         </div>
 
+        <div class="button_more_gallery">
 
-    </headline>
+            <a href="#">СЛЕДУЮЩАЯ СЪЕМКА &rarr;</a>
+        </div>
+
+    </section>
+
+    <script>
+        $(".gallery-list").magnificPopup({
+            delegate: "a",
+            type: "image",
+            OnBgClick: true,
+            showCloseBtn: false,
+            EscapeKey: true,
+            removalDelay: 300,
+            gallery: {
+                enabled: true
+            }
+        });
+    </script>
+
+
     <footer>
         <div class="conteiner">
             <h2 class="logo">
@@ -200,7 +308,7 @@
                 <a href="#"><img src="img/footer/instagram.png" alt=""></a>
                 <a href="#"><img src="img/footer/vk.png" alt=""></a>
                 <a href="#"><img src="img/footer/mywed.png" alt=""></a>
-                <a href="#"><img src="img/footer/telegram .png" alt=""></a>
+                <a href="#"><img src="img/footer/telegram.png" alt=""></a>
             </div>
         </div>
         <p>2023 Все права защищены</p>
