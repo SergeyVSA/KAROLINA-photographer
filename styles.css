@@ -90,10 +90,41 @@ a {
   line-height: 42px;
   text-align: center;
   color: #000000;
+  margin-top: 69px;
+}
+
+.about_me_subtitle h2 {
+  font-size: 24px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  line-height: 42px;
+  text-align: center;
+  color: #000000;
   padding-bottom: 30px;
 }
-.about_me_headline h1 span {
-  font-size: 24px;
+.about_me_subtitle h2::before {
+  content: "";
+  border-top: 1px solid #000000;
+  position: absolute;
+  width: 16%;
+  left: 0;
+  margin-left: 85px;
+}
+.about_me_subtitle span {
+  background: #cccccc;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  padding: 0 12rem;
+  bottom: 13px;
+}
+.about_me_subtitle h2::after {
+  content: "";
+  border-top: 1px solid #000000;
+  position: absolute;
+  width: 16%;
+  right: 0;
+  margin-right: 85px;
 }
 
 .about_me {
@@ -181,9 +212,26 @@ a {
   line-height: 42px;
   text-align: start;
   padding: 64px 0px 0px 190px;
+  position: relative;
 }
 .carousel_headline h2 span {
-  padding: 0px 0px 0px 180px;
+  padding: 8px 10px 0px 180px;
+}
+.carousel_headline h2::after {
+  content: "";
+  border-top: 1px solid #000000;
+  position: absolute;
+  width: 38%;
+  right: 0;
+  margin-right: 139px;
+}
+.carousel_headline span {
+  background: #cccccc;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  padding: 0 2rem;
+  bottom: 5px;
 }
 
 .counter {
@@ -250,18 +298,25 @@ a {
   display: block;
 }
 
-.main_gallery_headline {
-  /*:after {
-      margin-left: 9%;
-    }
-  */
+.line {
+  margin-bottom: 30px;
 }
+.line ::before {
+  content: "";
+  position: absolute;
+  width: 34%;
+  border-top: 1px solid #000000;
+  margin-top: 4.6em;
+  left: 0;
+  margin-left: 34%;
+}
+
 .main_gallery_headline h2 {
   text-align: center;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 36px;
-  margin-top: 70px;
+  margin-top: 152px;
   line-height: 42px;
   position: relative;
 }
@@ -295,7 +350,6 @@ a {
   font-weight: 400;
   font-family: "Raleway", sans-serif;
   flex-wrap: wrap;
-  transition: all 400ms ease;
 }
 .gallery .main_gallery a {
   color: #000000;
@@ -311,6 +365,7 @@ a {
 .gallery .main_gallery img:hover {
   transform: scale(0.97);
   box-shadow: 5px 5px 5px rgb(78, 77, 77);
+  transition: all 600ms ease;
 }
 
 .button_more {
@@ -339,6 +394,29 @@ a {
   justify-content: center;
   margin-top: 120px;
   flex-wrap: wrap;
+  margin-bottom: 160px;
+}
+.instagram_gallery svg {
+  position: absolute;
+  margin-top: 35px;
+  margin-left: 96px;
+}
+.instagram_gallery img:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.instagram_gallery svg:hover {
+  transform: rotateX(0deg) rotateY(360deg);
+  transition: transform 500ms ease 0ms;
+}
+
+.line_insta_gallary ::before {
+  content: "";
+  position: absolute;
+  width: 20%;
+  border-top: 1px solid #000000;
+  margin-top: -4.4em;
+  left: 0;
+  margin-left: 40%;
 }
 
 .headline_form h4 {
@@ -347,7 +425,6 @@ a {
   font-family: "Raleway", sans-serif;
   line-height: 31px;
   text-align: center;
-  margin-top: 150px;
 }
 
 .application_form {
@@ -357,7 +434,6 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: 70px;
   margin-bottom: 100px;
   flex-wrap: wrap;
 }
@@ -502,12 +578,6 @@ footer a:hover {
   right: 0px;
   top: 61px;
   z-index: 2 !important;
-  /* a {
-    color: $color-main;
-    font-size: $font-size-18;
-    font-weight: $fw5;
-    font-family: $font-raleway;
-  }*/
 }
 .mobile_menu .dropdown {
   position: relative;
@@ -585,7 +655,8 @@ footer a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 26px;
+  margin-bottom: 30px;
+  margin-top: -75px;
 }
 .mobile_gallery p {
   font-family: "Raleway", sans-serif;
@@ -594,6 +665,18 @@ footer a:hover {
   line-height: 28px;
   letter-spacing: 0.005em;
   text-align: center;
+}
+
+.mobile_line {
+  margin-bottom: 30px;
+}
+.mobile_line ::before {
+  content: "";
+  position: absolute;
+  width: 45%;
+  border-top: 1px solid #000000;
+  margin-top: 0.6em;
+  right: 0;
 }
 
 .mobile_feedback {
@@ -643,6 +726,7 @@ footer a:hover {
   white-space: nowrap;
 }
 .mobile_feedback p {
+  text-align: start;
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -674,23 +758,25 @@ footer a:hover {
 .mobile_footer {
   margin: o auto;
   background: #e5dfdb;
-  padding: 40px 0px 50px 0px;
+  padding: 23px 0px 50px 0px;
   text-align: center;
 }
-.mobile_footer .logo {
+.mobile_footer .logo h2 {
+  letter-spacing: 0.2em;
   font-size: 24px;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   line-height: 25px;
   text-align: center;
-  /* padding: 0px 91px;*/
 }
-.mobile_footer span {
+.mobile_footer .logo span {
   font-size: 18px;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   text-align: center;
-  padding: 0px;
+  letter-spacing: 0.1em;
+  bottom: 17px;
+  position: relative;
 }
 .mobile_footer a {
   text-decoration: underline;
@@ -714,7 +800,7 @@ footer a:hover {
   font-size: 18px;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
-  line-height: 23px;
+  line-height: 21px;
   text-align: center;
   letter-spacing: 0.065em;
   text-transform: uppercase;
@@ -774,10 +860,6 @@ footer a:hover {
   margin: 0 auto;
 }
 .conteiner_gallery .portfolio_gallery {
-  /* display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(392px, 1fr));
-  padding: 100px;
-  justify-content: center;*/
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
@@ -836,7 +918,6 @@ footer a:hover {
 .conteiner_wedding_gallery .wedding_gallery {
   display: flex;
   flex-direction: column;
-  /* flex-wrap: wrap;*/
   gap: 5px;
   align-items: center;
 }
@@ -1537,11 +1618,6 @@ footer a:hover {
   text-align: center;
   letter-spacing: 0.015em;
   color: #050505;
-  /*span::before {
-    content: "";
-    width: 100%;
-    position: absolute;
-    border-top: 1px solid black;*/
 }
 .contacts_conteiner .contacts_main .application_contacts h3::before {
   content: "";
@@ -1990,9 +2066,9 @@ section .gallery {
     content: "";
     position: absolute;
     border-top: 1px solid #000000;
-    width: 130px;
+    width: 43%;
     left: 0px;
-    bottom: 58px;
+    bottom: 4rem;
   }
   .main_gallery_headline span {
     display: none;
@@ -2095,25 +2171,27 @@ section .gallery {
   .carousel_headline h2 {
     margin: 0 auto;
     position: relative;
-    padding-left: 40px;
+    font-weight: 300;
+    padding-left: 22px;
     font-family: "Raleway", sans-serif;
     top: 26px;
-    line-height: 20px;
-    font-size: 18px;
+    line-height: 19px;
+    font-size: 14px;
     text-align: start;
     text-transform: uppercase;
   }
   .carousel_headline h2 span {
     padding-left: 88px;
+    bottom: 4px;
   }
-  /* .carousel_headline
-    ::before {
-      content: "";
-      position: absolute;
-      width: 120%;
-      border-top: 1px solid #000000;
-    }
-  */
+  .carousel_headline h2::after {
+    content: "";
+    border-top: 1px solid #000000;
+    position: absolute;
+    width: 43%;
+    right: 0;
+    margin-right: 0px;
+  }
   .counter {
     font-size: 12px;
   }
@@ -2270,6 +2348,12 @@ section .gallery {
     text-align: center;
     padding-top: 30px;
   }
+  .about_me_subtitle h2 {
+    display: none;
+  }
+  .line {
+    display: none;
+  }
 }
 @media only screen and (min-width: 800px) {
   .mobile_about_me_headline {
@@ -2293,27 +2377,20 @@ section .gallery {
   .mobile_contacts {
     display: none;
   }
+  .mobile_line {
+    display: none;
+  }
 }
 @media only screen and (max-width: 1370px) {
-  /* footer {
-      .logo {
-        margin: 0 auto;
-        border: none;
-      }
-    }*/
   .footer_icon {
     display: flex;
     margin: 0 auto;
     flex-wrap: nowrap;
+    padding-top: 20px;
   }
   .footer_icon a {
     align-items: center;
   }
-  /*  .nav_footer {
-    margin: 0 auto;
-    white-space: nowrap;
-    flex-wrap: nowrap;
-  }*/
   .about_me_discription {
     width: 100%;
   }
@@ -2324,6 +2401,9 @@ section .gallery {
     margin: 0 auto;
     text-align: center;
     flex-wrap: nowrap;
+    flex: 29%;
+    justify-content: center;
+    padding-top: 20px;
   }
   .footer_icon a {
     align-items: center;
@@ -2335,6 +2415,7 @@ section .gallery {
   footer .nav_footer {
     display: flex;
     margin: 0 auto;
+    flex: 83%;
   }
 }
 @media only screen and (max-width: 850px) {

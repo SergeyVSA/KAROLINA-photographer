@@ -125,10 +125,43 @@ a {
     line-height: 42px;
     text-align: center;
     color: $color-main;
+    margin-top: 69px;
+  }
+}
+.about_me_subtitle {
+  h2 {
+    font-size: $font-size-24;
+    font-family: $font-raleway;
+    font-weight: $fw4;
+    line-height: 42px;
+    text-align: center;
+    color: $color-main;
     padding-bottom: 30px;
-    span {
-      font-size: $font-size-24;
-    }
+  }
+  h2::before {
+    content: "";
+    border-top: 1px solid $color-main;
+    position: absolute;
+    width: 16%;
+    left: 0;
+    margin-left: 85px;
+  }
+  span {
+    background: $background-primary;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 0 12rem;
+    bottom: 13px;
+  }
+
+  h2::after {
+    content: "";
+    border-top: 1px solid $color-main;
+    position: absolute;
+    width: 16%;
+    right: 0;
+    margin-right: 85px;
   }
 }
 
@@ -219,10 +252,28 @@ a {
     line-height: 42px;
     text-align: start;
     padding: 64px 0px 0px 190px;
+    position: relative;
 
     span {
-      padding: 0px 0px 0px 180px;
+      padding: 8px 10px 0px 180px;
     }
+  }
+
+  h2::after {
+    content: "";
+    border-top: 1px solid $color-main;
+    position: absolute;
+    width: 38%;
+    right: 0;
+    margin-right: 139px;
+  }
+  span {
+    background: $background-primary;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 0 2rem;
+    bottom: 5px;
   }
 }
 .counter {
@@ -286,6 +337,18 @@ a {
   margin-top: -10px;
   display: block;
 }
+.line {
+  margin-bottom: 30px;
+  ::before {
+    content: "";
+    position: absolute;
+    width: 34%;
+    border-top: 1px solid #000000;
+    margin-top: 4.6em;
+    left: 0;
+    margin-left: 34%;
+  }
+}
 
 .main_gallery_headline {
   h2 {
@@ -293,7 +356,7 @@ a {
     font-family: $font-raleway;
     font-weight: $fw4;
     font-size: $font-size-36;
-    margin-top: 70px;
+    margin-top: 152px;
     line-height: 42px;
     position: relative;
     span {
@@ -310,11 +373,6 @@ a {
     content: "";
     right: 404px;
   }
-
-  /*:after {
-    margin-left: 9%;
-  }
-*/
 }
 .gallery {
   max-width: 1440px;
@@ -332,7 +390,7 @@ a {
     font-weight: $fw4;
     font-family: $font-raleway;
     flex-wrap: wrap;
-    transition: all 400ms ease;
+
     a {
       color: $color-main;
       padding: 5px;
@@ -348,6 +406,7 @@ a {
     img:hover {
       transform: scale(0.97);
       box-shadow: 5px 5px 5px rgb(78, 77, 77);
+      transition: all 600ms ease;
     }
   }
 }
@@ -377,7 +436,38 @@ a {
   justify-content: center;
   margin-top: 120px;
   flex-wrap: wrap;
+  margin-bottom: 160px;
+  svg {
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 96px;
+  }
+
+ 
+
+  img:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+ 
+  }
+  svg:hover {
+    transform: rotateX(0deg) rotateY(360deg);
+    transition: transform 500ms ease 0ms;
+  }
 }
+  
+
+.line_insta_gallary {
+  ::before {
+    content: "";
+    position: absolute;
+    width: 20%;
+    border-top: 1px solid #000000;
+    margin-top: -4.4em;
+    left: 0;
+    margin-left: 40%;
+  }
+}
+
 .headline_form {
   h4 {
     font-weight: $fw4;
@@ -385,7 +475,6 @@ a {
     font-family: $font-raleway;
     line-height: 31px;
     text-align: center;
-    margin-top: 150px;
   }
 }
 .application_form {
@@ -395,7 +484,6 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: 70px;
   margin-bottom: 100px;
   flex-wrap: wrap;
 
@@ -585,12 +673,7 @@ footer {
   .show {
     display: block !important;
   }
-  /* a {
-    color: $color-main;
-    font-size: $font-size-18;
-    font-weight: $fw5;
-    font-family: $font-raleway;
-  }*/
+
   .contact {
     background-color: #e5dfdb;
     width: 330px;
@@ -630,7 +713,8 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 26px;
+  margin-bottom: 30px;
+  margin-top: -75px;
   p {
     font-family: $font-raleway;
     font-size: $font-size-24;
@@ -638,6 +722,17 @@ footer {
     line-height: 28px;
     letter-spacing: 0.005em;
     text-align: center;
+  }
+}
+.mobile_line {
+  margin-bottom: 30px;
+  ::before {
+    content: "";
+    position: absolute;
+    width: 45%;
+    border-top: 1px solid $color-main;
+    margin-top: 0.6em;
+    right: 0;
   }
 }
 .mobile_feedback {
@@ -687,8 +782,8 @@ footer {
     margin-bottom: 20px;
     white-space: nowrap;
   }
-
   p {
+    text-align: start;
     font-size: 16px;
     font-family: $font-roboto;
     font-weight: $fw4;
@@ -721,25 +816,29 @@ footer {
 .mobile_footer {
   margin: o auto;
   background: $background-secondary;
-  padding: 40px 0px 50px 0px;
+  padding: 23px 0px 50px 0px;
   text-align: center;
 
   .logo {
-    font-size: $font-size-24;
-    font-family: $font-roboto;
-    font-weight: $fw3;
-    line-height: 25px;
-    text-align: center;
+    h2 {
+      letter-spacing: 0.2em;
+      font-size: $font-size-24;
+      font-family: $font-roboto;
+      font-weight: $fw3;
+      line-height: 25px;
+      text-align: center;
+    }
+    span {
+      font-size: $font-size-18;
+      font-family: $font-roboto;
+      font-weight: $fw3;
+      text-align: center;
+      letter-spacing: 0.1em;
+      bottom: 17px;
+      position: relative;
+    }
+  }
 
-    /* padding: 0px 91px;*/
-  }
-  span {
-    font-size: $font-size-18;
-    font-family: $font-roboto;
-    font-weight: $fw3;
-    text-align: center;
-    padding: 0px;
-  }
   a {
     text-decoration: underline;
     font-family: $font-roboto;
@@ -762,7 +861,7 @@ footer {
   font-size: $font-size-18;
   font-family: $font-raleway;
   font-weight: $fw4;
-  line-height: 23px;
+  line-height: 21px;
   text-align: center;
   letter-spacing: 0.065em;
   text-transform: uppercase;
@@ -820,10 +919,6 @@ footer {
   max-width: 1440px;
   margin: 0 auto;
   .portfolio_gallery {
-    /* display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(392px, 1fr));
-    padding: 100px;
-    justify-content: center;*/
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
@@ -869,12 +964,12 @@ footer {
     line-height: 31px;
     color: $color-main;
   }
- 
+
   span {
     position: relative;
     bottom: 4px;
   }
- a:hover {
+  a:hover {
     transform: scale(1.5);
   }
 }
@@ -886,7 +981,6 @@ footer {
   .wedding_gallery {
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap;*/
     gap: 5px;
     align-items: center;
   }
@@ -1606,11 +1700,6 @@ footer {
         text-align: center;
         letter-spacing: 0.015em;
         color: #050505;
-        /*span::before {
-          content: "";
-          width: 100%;
-          position: absolute;
-          border-top: 1px solid black;*/
       }
       h3::before {
         content: "";
@@ -2061,9 +2150,9 @@ section {
       content: "";
       position: absolute;
       border-top: 1px solid $color-main;
-      width: 130px;
+      width: 43%;
       left: 0px;
-      bottom: 58px;
+      bottom: 4rem;
     }
 
     span {
@@ -2175,28 +2264,29 @@ section {
     h2 {
       margin: 0 auto;
       position: relative;
-      padding-left: 40px;
+      font-weight: $fw3;
+      padding-left: 22px;
       font-family: $font-raleway;
       top: 26px;
-      line-height: 20px;
-      font-size: $font-size-18;
-
+      line-height: 19px;
+      font-size: $font-size-14;
       text-align: start;
       text-transform: uppercase;
 
       span {
         padding-left: 88px;
+        bottom: 4px;
       }
     }
-  }
-  /* .carousel_headline
-    ::before {
+    h2::after {
       content: "";
+      border-top: 1px solid $color-main;
       position: absolute;
-      width: 120%;
-      border-top: 1px solid #000000;
+      width: 43%;
+      right: 0;
+      margin-right: 0px;
     }
-  */
+  }
   .counter {
     font-size: 12px;
   }
@@ -2380,6 +2470,14 @@ section {
     text-align: center;
     padding-top: 30px;
   }
+  .about_me_subtitle {
+    h2 {
+      display: none;
+    }
+  }
+  .line {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 800px) {
@@ -2405,27 +2503,22 @@ section {
   .mobile_contacts {
     display: none;
   }
+  .mobile_line {
+    display: none;
+  }
 }
+
 @media only screen and (max-width: 1370px) {
-  /* footer {
-      .logo {
-        margin: 0 auto;
-        border: none;
-      }
-    }*/
   .footer_icon {
     display: flex;
     margin: 0 auto;
     flex-wrap: nowrap;
+    padding-top: 20px;
     a {
       align-items: center;
     }
   }
-  /*  .nav_footer {
-    margin: 0 auto;
-    white-space: nowrap;
-    flex-wrap: nowrap;
-  }*/
+
   .about_me_discription {
     width: 100%;
   }
@@ -2437,6 +2530,9 @@ section {
     margin: 0 auto;
     text-align: center;
     flex-wrap: nowrap;
+    flex: 29%;
+    justify-content: center;
+    padding-top: 20px;
     a {
       align-items: center;
     }
@@ -2450,6 +2546,7 @@ section {
     .nav_footer {
       display: flex;
       margin: 0 auto;
+      flex: 83%;
     }
   }
 }
