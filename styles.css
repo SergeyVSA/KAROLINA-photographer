@@ -2787,6 +2787,9 @@ section .gallery {
   .headline_form h4:before {
     display: none;
   }
+  .carousel img {
+    height: 200px;
+  }
   .carousel .item {
     max-width: 340px;
     aspect-ratio: 340/200;

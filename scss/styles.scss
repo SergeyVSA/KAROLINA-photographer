@@ -2940,6 +2940,9 @@ section {
     }
   }
   .carousel {
+    img{
+      height: 200px;
+    }
     .item{
       max-width: 340px;
       aspect-ratio: 340/200;
