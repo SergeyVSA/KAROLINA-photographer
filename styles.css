@@ -2788,7 +2788,7 @@ section .gallery {
     display: none;
   }
   .carousel .item {
-    max-width: 340;
+    max-width: 340px;
     aspect-ratio: 340/200;
   }
 }
