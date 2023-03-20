@@ -76,7 +76,11 @@ window.addEventListener("DOMContentLoaded", function () {
 $(".gallery-list").magnificPopup({
     delegate: "a",
     type: "image",
+    OnBgClick: true,
+    showCloseBtn: false,
+    EscapeKey: true,
+    removalDelay: 300,
     gallery: {
-      enabled: true
+        enabled: true
     }
-  });
+});
