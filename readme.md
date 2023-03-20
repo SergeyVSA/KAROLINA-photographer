@@ -1,6 +1,6 @@
-# website for the photographer #
+# Website for the photographer #
 
-Example of a UI/UX designer portfolio page.
+
 
 [Github pages](https://sergeyvsa.github.io/KAROLINA-photographer/)
 
