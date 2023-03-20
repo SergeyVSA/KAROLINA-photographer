@@ -2939,6 +2939,13 @@ section {
       display: none;
     }
   }
+  .carousel {
+    .item{
+      max-width: 340;
+      aspect-ratio: 340/200;
+    }
+  }
+   
 }
 
 @media only screen and (min-width: 800px) {

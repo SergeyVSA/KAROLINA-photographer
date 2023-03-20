@@ -2787,6 +2787,10 @@ section .gallery {
   .headline_form h4:before {
     display: none;
   }
+  .carousel .item {
+    max-width: 340;
+    aspect-ratio: 340/200;
+  }
 }
 @media only screen and (min-width: 800px) {
   .mobile_about_me_headline {
